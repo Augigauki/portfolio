@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'Editorial Old';
+    src: url('../public/fonts/PPEditorialOld-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Editorial Old';
+    src: url('../public/fonts/PPEditorialOld-Italic.otf') format('opentype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Editorial Old';
+    src: url('../public/fonts/PPEditorialOld-Ultralight.otf') format('opentype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Editorial Old';
+    src: url('../public/fonts/PPEditorialOld-UltralightItalic.otf') format('opentype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Switzer';
+    src: url('../public/fonts/Switzer-Variable.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Switzer';
+    src: url('../public/fonts/Switzer-VariableItalic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
