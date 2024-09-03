@@ -1,0 +1,16 @@
+.outerwrapper{
+    position: relative;
+    width: 100%;
+    margin-bottom: 100vh;
+}
+
+.line{
+    position: fixed;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    height: 100vh;
+    width: 2px;
+    z-index: 1;
+}
+

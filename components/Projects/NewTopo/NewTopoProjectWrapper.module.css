@@ -1,0 +1,69 @@
+.projectwrapper{
+    position: relative;
+    padding: calc(464rem/16) 0;
+    --left: 12vw;
+    --right: 64vw;
+    margin-top: 2rem;
+}
+
+.title{
+    font-family: 'Editorial Old';
+    font-weight: 200;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: calc(110rem/16);
+    z-index: 20;
+    user-select: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titlebg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 364px;
+    transform: translate(-50%, -50%);
+    background-color: var(--white);
+    z-index: 1;
+}
+
+.meta{
+    text-transform: uppercase;
+    
+    max-width: 26ch;
+    z-index: 10;
+}
+
+.meta#category{
+    position: absolute;
+   
+    text-align: left;
+    transform: translate(var(--right), -20vh);
+}
+
+.meta#descriptor{
+    position: absolute;
+    transform: translate(var(--left), 5vh);
+}
+
+.image{
+    position: absolute;
+    z-index: 10;
+    user-select: none;
+}
+
+#firuspread{
+    top: 0;
+    z-index: 10;
+    transform: translate(var(--left), 0);
+}
+
+#detail{
+    bottom: 10vh;
+    right: 8vw;
+}

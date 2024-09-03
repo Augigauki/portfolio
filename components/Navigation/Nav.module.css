@@ -1,0 +1,40 @@
+.outerheader{
+    width: 100%;
+    background-color: var(--white);
+    position: sticky;
+    background-color: var(--white);
+    top: 0;
+    z-index: 100;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: calc(30rem/16) 0;
+    
+}
+
+.navlink{
+    text-decoration: underline;
+    color: inherit;
+    text-transform: uppercase;
+    line-height: 1;
+    text-underline-offset: 4px;
+}
+
+.navlink:hover{
+    text-decoration: none;
+}
+
+.title{
+    font-family: 'Editorial Old';
+    font-weight: 200;
+    font-size: calc(42rem/16);
+    font-style: italic;
+    line-height: 1;
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+}
