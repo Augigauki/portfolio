@@ -4,8 +4,6 @@ import StyledText from '@/components/UI/StyledText';
 import Link from 'next/link';
 
 export default function Home() {
-	const disabled = ['gu', 'ks'];
-
 	return (
 		<main>
 			<div className={styles.wrapper}>
@@ -26,10 +24,7 @@ export default function Home() {
 					</Link>
 				</div>
 				<h1 className={styles.maintitle}>
-					<StyledText
-						text={'August Gaukstad'}
-						substrings={disabled}
-					/>
+					<StyledText text={'August Gaukstad'} />
 				</h1>
 			</div>
 		</main>

@@ -4,11 +4,12 @@ import splitAndStyleText from '@/util/fontutils';
 
 interface StyledTextProps {
 	text: string;
-	substrings: string[];
 }
 
-const StyledText: FC<StyledTextProps> = ({ text, substrings }) => {
-	const styledParts = splitAndStyleText(text, substrings);
+const disabled = ['g', 'k', 'r'];
+
+const StyledText: FC<StyledTextProps> = ({ text }) => {
+	const styledParts = splitAndStyleText(text, disabled);
 	return <>{styledParts}</>;
 };
 

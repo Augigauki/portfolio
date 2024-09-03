@@ -27,7 +27,6 @@ html {
 h1 {
 	font-size: calc(40rem / 16);
   font-family: 'Editorial Old';
-  font-style: italic;
 }
 
 h2 {
