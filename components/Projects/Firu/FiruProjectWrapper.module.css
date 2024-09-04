@@ -1,9 +1,13 @@
 .projectwrapper{
     position: relative;
-    padding: calc(464rem/16) 0;
-    --left: 12vw;
-    --right: 50vw;
+    padding: 33vh 0;
+    --left: 12%;
+    --right: 50%;
     margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   /*  outline: 1px solid var(--blue); */
 }
 
 .title{
@@ -13,7 +17,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: calc(110rem/16);
+    font-size: calc(110em/16);
     z-index: 20;
     user-select: none;
 }
@@ -38,19 +42,20 @@
 
 .meta#category{
     position: absolute;
-   
-    text-align: left;
-    transform: translate(var(--right), -20vh);
+    top: 350px;
+    left: 950px;
 }
 
 .meta#descriptor{
     position: absolute;
-    transform: translate(var(--left), 5vh);
+    left: 200px;
+    top: 800px;
 }
 
 .meta#type{
     position: absolute;
-    transform: translate(var(--right), 15vh);
+    left: 950px;
+    bottom: 400px;
 }
 
 .image{
@@ -60,12 +65,13 @@
 }
 
 #firuspread{
-    top: 0;
     z-index: 10;
-    transform: translate(var(--left), 0);
+    left: 200px;
+    top: 200px;
 }
 
 #detail{
-    bottom: 10vh;
-    right: 8vw;
+    z-index: 10;
+    top: 700px;
+    right: 0;
 }

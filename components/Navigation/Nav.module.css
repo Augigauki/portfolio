@@ -37,4 +37,7 @@
     text-decoration: none;
     color: inherit;
     position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 3px;
 }

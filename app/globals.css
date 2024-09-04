@@ -109,11 +109,11 @@ body {
 	}
 }
 
-/* @media (min-width: 1920px) {
+@media (min-width: 1920px) {
 	body {
 		font-size: 1.15rem;
 	}
-} */
+}
 
 @media (max-width: 1280px) {
 	.container {

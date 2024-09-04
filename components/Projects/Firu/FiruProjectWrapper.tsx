@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import StyledText from '../../UI/StyledText';
 import styles from './FiruProjectWrapper.module.css';
 import Image from 'next/image';
@@ -8,9 +9,11 @@ const FiruProjectWrapper = ({}) => {
 			className={styles.projectwrapper}
 			style={{ color: 'var(--blue)' }}
 		>
-			<h2 className={styles.title}>
-				<StyledText text='Firu' />
-			</h2>
+			<Link href={'/projects/firu'}>
+				<h2 className={styles.title}>
+					<StyledText text='Firu' />
+				</h2>
+			</Link>
 			<div className={styles.titlebg} />
 			<Image
 				src={'/assets/images/projects/firu/spread_1.jpg'}

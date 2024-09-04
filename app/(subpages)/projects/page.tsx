@@ -6,15 +6,17 @@ import ContentWrapper from '@/components/Wrappers/ContentWrapper';
 import styles from './Projects.module.css';
 import FiruProjectWrapper from '@/components/Projects/Firu/FiruProjectWrapper';
 import NewTopoProjectWrapper from '@/components/Projects/NewTopo/NewTopoProjectWrapper';
+import { useColor } from '@/context/ColorContext';
 
 const Projects = () => {
 	const firuRef = useRef(null);
 	const newTopoRef = useRef(null);
 
-    const firuInView = useInView(firuRef, { margin: '-50% 0px' }); // Adjust the margin as needed
-    const newTopoInView = useInView(newTopoRef, { margin: '-50% 0px' }); 
+    const firuInView = useInView(firuRef, { margin: '-40% 0px' }); // Adjust the margin as needed
+    const newTopoInView = useInView(newTopoRef, { margin: '-40% 0px' }); 
 
-	const [lineColor, setLineColor] = useState('rgb(5, 66, 155)'); // Initial color (blue)
+	//const [lineColor, setLineColor] = useState('rgb(5, 66, 155)'); // Initial color (blue)
+	const {lineColor, setLineColor} = useColor();
 
 	useEffect(() => {
 		if (firuInView) {
@@ -24,13 +26,14 @@ const Projects = () => {
 		} else {
 			setLineColor('rgb(5, 66, 155)'); // Fallback color (blue)
 		}
-	}, [firuInView, newTopoInView]);
+	}, [firuInView, newTopoInView, setLineColor]);
 
 	return (
 		<ContentWrapper>
 			<div className={styles.outerwrapper}>
 				<motion.div
 					className={styles.line}
+					initial={{backgroundColor: lineColor}}
 					animate={{ backgroundColor: lineColor }}
 					transition={{ duration: 1 }} // Adjust the duration as needed
 				/>

@@ -27,6 +27,9 @@
   user-select: none;
   background-color: var(--white);
   border: 32px solid var(--white);
+  display: flex;
+  justify-content: center;
+  gap: 1%;
 }
 
 .link{
