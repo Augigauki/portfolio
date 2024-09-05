@@ -34,12 +34,12 @@ const Header = ({}) => {
 						style={{ color: lineColor }}
 					>
 						<motion.p
-							initial={{color: 'black'}}
-							animate={{color: lineColor}}
-							transition={{duration: 1}}
-						><StyledText text={'August Gaukstad'} /></motion.p
-						
+							initial={{ color: 'black' }}
+							animate={{ color: lineColor }}
+							transition={{ duration: 1 }}
 						>
+							<StyledText text={'August Gaukstad'} />
+						</motion.p>
 					</Link>
 					<Link
 						className={styles.navlink}
@@ -47,10 +47,12 @@ const Header = ({}) => {
 						style={{ color: lineColor }}
 					>
 						<motion.p
-							initial={{color: 'black'}}
-							animate={{color: lineColor}}
-							transition={{duration: 1}}
-						>About</motion.p>
+							initial={{ color: 'black' }}
+							animate={{ color: lineColor }}
+							transition={{ duration: 1 }}
+						>
+							About
+						</motion.p>
 					</Link>
 				</div>
 			</ContentWrapper>

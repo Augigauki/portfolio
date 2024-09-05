@@ -1,0 +1,158 @@
+.line{
+    position: fixed;
+    width: 2px;
+    background-color: var(--blue);
+    height: 100vh;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.content{
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+    align-items: center;
+    /* padding-bottom: 30rem; */
+}
+
+.heroimgwrapper{
+    width: 100%;
+    height: 55vh;
+    position: relative;
+    margin-top: 120px;
+    box-shadow: 0 0 0 30px var(--white);
+    margin-bottom: 30px;
+}
+
+.heroimgwrapper img{
+    object-fit: cover;
+}
+
+.title{
+    position: relative;
+    z-index: 3;
+    font-size: calc(110em/16);
+    font-weight: 200;
+    color: var(--blue);
+    line-height: normal;
+    background-color: var(--white);
+    box-shadow: 0 0 0 10px var(--white);
+}
+
+.meta{
+    color: var(--blue);
+    text-transform: uppercase;
+    position: relative;
+    font-size: calc(15em/16);
+    font-weight: 400;
+    max-width: 20ch;
+}
+
+.meta#what, .meta#type{
+    left: 6rem;
+}
+
+.meta#brief{
+    right: 20%;
+}
+
+.flex{
+    display: flex;
+    width: 100%;
+}
+
+.fleximgwrapper{
+    position: relative;
+    flex-basis: 50%;
+    height: calc(666em/16);
+    right: 2rem;
+    flex-grow: 1;
+}
+
+.fleximgwrapper img{
+    object-fit: cover;
+}
+
+.flex p{
+    position: relative;
+    flex-basis: 50%;
+    flex-grow: 1;
+    left: 2rem;
+}
+
+.bodytext{
+    color: var(--blue);
+    font-size: calc(20em/16);
+}
+
+.bigimgwrapper{
+    position: relative;
+    height: 150vh;
+    width: 100%;
+    z-index: 2;
+    box-shadow: 0 0 0 60px var(--white);
+    margin: 60px 0;
+}
+
+.bigimgwrapper img{
+    object-fit: cover;
+}
+
+.catchphrasewrapper{
+    position: relative;
+    margin-top: 400px;
+    z-index: 2;
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.catchphrase{
+    
+    position: relative;
+    z-index: 3;
+    font-family: 'Editorial Old';
+    font-style: italic;
+    font-weight: 200;
+    font-size: calc(130em/16);
+    display: flex;
+    gap: 1.75%;
+    flex-wrap: wrap;
+    color: var(--blue);
+    /* box-shadow: 0 0 0 30px var(--white); */
+    align-items: center;
+    justify-content: center;
+    max-width: 66%;
+    line-height: 1.06;
+}
+
+.catchphrasetextbg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 66%;
+    height: 600px;
+    z-index: 1;
+    background-color: var(--white);
+}
+
+#spread2{
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    top: 0;
+}
+
+#spread3{
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    bottom: 0;
+}
