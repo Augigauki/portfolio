@@ -1,0 +1,11 @@
+.fleximgwrapper{
+    position: relative;
+    flex-basis: 50%;
+    height: calc(1000em/16);
+    right: 2rem;
+    flex-grow: 1;
+}
+
+.fleximgwrapper img{
+    object-fit: cover;
+}

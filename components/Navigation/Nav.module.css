@@ -39,5 +39,9 @@
     position: relative;
     display: flex;
     justify-content: center;
+}
+
+.title p{
+    display: flex;
     gap: 3px;
 }

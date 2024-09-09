@@ -1,4 +1,7 @@
-
+.flex{
+    display: flex;
+    width: 100%;
+}
 
 .fleximgwrapper{
     position: relative;
@@ -12,16 +15,9 @@
     object-fit: cover;
 }
 
-#spread2{
-    position: absolute;
-    z-index: 2;
-    left: 0;
-    top: 0;
-}
-
-#spread3{
-    position: absolute;
-    z-index: 2;
-    right: 0;
-    bottom: 0;
+.flex p{
+    position: relative;
+    flex-basis: 50%;
+    flex-grow: 1;
+    left: 2rem;
 }

@@ -1,6 +1,7 @@
 import StyledText from '@/components/UI/StyledText';
 import styles from './NewTopoProjectWrapper.module.css'
 import Image from 'next/image';
+import Link from 'next/link';
 
 const NewTopoProjectWrapper = ({}) => {
     return(
@@ -8,9 +9,11 @@ const NewTopoProjectWrapper = ({}) => {
 			className={styles.projectwrapper}
 			style={{ color: 'var(--winered)' }}
 		>
-			<h2 className={styles.title}>
-				<StyledText text='New Topographics' />
-			</h2>
+			<Link href={'/projects/new-topographics'}>
+				<h2 className={styles.title}>
+					<StyledText text='New Topographics' />
+				</h2>
+			</Link>
 			<div className={styles.titlebg} />
 			<Image
 				src={'/assets/images/projects/newtopo/newtopo1.jpg'}

@@ -1,0 +1,39 @@
+.catchphrasewrapper{
+    position: relative;
+    margin-top: 400px;
+    z-index: 2;
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.catchphrase{
+    
+    position: relative;
+    z-index: 3;
+    font-family: 'Editorial Old';
+    font-style: italic;
+    font-weight: 200;
+    font-size: calc(130em/16);
+    display: flex;
+    gap: 1.75%;
+    flex-wrap: wrap;
+    /* box-shadow: 0 0 0 30px var(--white); */
+    align-items: center;
+    justify-content: center;
+    max-width: 66%;
+    line-height: 1.06;
+}
+
+.catchphrasetextbg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 66%;
+    height: 600px;
+    z-index: 1;
+    background-color: var(--white);
+}

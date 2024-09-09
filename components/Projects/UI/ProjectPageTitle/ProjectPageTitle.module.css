@@ -1,0 +1,12 @@
+.title{
+    position: relative;
+    z-index: 3;
+    font-size: calc(110em/16);
+    font-weight: 200;
+    line-height: normal;
+    background-color: var(--white);
+    box-shadow: 0 0 0 10px var(--white);
+    display: flex;
+    gap: 6px;
+    user-select: none;
+}

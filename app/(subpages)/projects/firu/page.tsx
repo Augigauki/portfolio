@@ -1,45 +1,61 @@
+'use client'
+
 import ContentWrapper from '@/components/Wrappers/ContentWrapper';
 import styles from './Firu.module.css';
 import Image from 'next/image';
-import StyledText from '@/components/UI/StyledText';
 import articlespread1 from '@/public/assets/images/projects/firu/page/articlespread1jpg.jpg';
-import { Fragment } from 'react';
+import ProjectContentWrapper from '@/components/Wrappers/ProjectContentWrapper';
+import HeroImageWrapper from '@/components/Projects/UI/HeroImage/HeroImageWrapper';
+import ProjectPageTitle from '@/components/Projects/UI/ProjectPageTitle/ProjectPageTitle';
+import Line from '@/components/Projects/UI/Line/Line';
+import Meta from '@/components/Projects/UI/Meta/Meta';
+import ProjectFlexWrapper from '@/components/Projects/UI/ProjectFlex/ProjectFlexWrapper';
+import ProjectBodyText from '@/components/Projects/UI/ProjectBodyText/ProjectBodyText';
+import LongLongImage from '@/components/Projects/UI/LongLongImage/LongLongImage';
+import Catchphrase from '@/components/Projects/UI/Catchphrase/Catchphrase';
+import { useColor } from '@/context/ColorContext';
 
 const Firu = ({}) => {
+	const projColor = 'var(--blue)';
+	const metaLeft = '6rem';
+	const metaRight = '24rem';
+
+	const {setLineColor} = useColor();
+	setLineColor(projColor)
+
 	return (
-		<div style={{paddingBottom: '40rem'}}>
+		<div style={{ paddingBottom: '10rem' }}>
 			<ContentWrapper>
-				<div className={styles.line} />
-				<div className={styles.content}>
-					<div className={styles.heroimgwrapper}>
-						<Image
-							src={'/assets/images/projects/firu/page/hero.jpg'}
-							alt={'Tokyo Skyline'}
-							fill={true}
-						/>
-					</div>
-					<p
-						className={styles.meta}
-						id={styles.what}
+				<Line color={projColor} />
+				<ProjectContentWrapper>
+					<HeroImageWrapper
+						src={'/assets/images/projects/firu/page/hero.jpg'}
+						alt={'Tokyo Skyline'}
+					/>
+					<Meta
+						color={projColor}
+						left={metaLeft}
 					>
 						Editorial 2018
-					</p>
-					<h1 className={styles.title}>
-						<StyledText text={'Firu'} />
-					</h1>
-					<p
-						className={styles.meta}
-						id={styles.brief}
+					</Meta>
+					<ProjectPageTitle
+						text={'Firu'}
+						color={projColor}
+					/>
+
+					<Meta
+						color={projColor}
+						right={metaRight}
 					>
-						Firu as a magazine about japanophilia
-					</p>
-					<p
-						className={styles.meta}
-						id={styles.type}
+						Firu is a magazine about japanophilia
+					</Meta>
+					<Meta
+						color={projColor}
+						left={metaLeft}
 					>
 						Schoolwork
-					</p>
-					<div className={styles.flex}>
+					</Meta>
+					<ProjectFlexWrapper>
 						<div className={styles.fleximgwrapper}>
 							<Image
 								src={articlespread1}
@@ -47,45 +63,41 @@ const Firu = ({}) => {
 								fill={true}
 							/>
 						</div>
-						<p className={styles.bodytext}>
+						<ProjectBodyText color={projColor}>
 							Create a lifestyle magazine with a theme of your choice. Design your own layout for an
 							article and set styles for headings and body text. When styles and layout are set, fill the
 							magazine with content and design it accordingly. The layout, styles and content should all
 							reflect the theme chosen.
-						</p>
-					</div>
-				</div>
+						</ProjectBodyText>
+					</ProjectFlexWrapper>
+				</ProjectContentWrapper>
 			</ContentWrapper>
-			<div className={styles.bigimgwrapper}>
-				<Image
-					src={'/assets/images/projects/firu/page/hero.jpg'}
-					alt={'Tokyo skyline'}
-					fill={true}
-				/>
-			</div>
+			<LongLongImage
+				src={'/assets/images/projects/firu/page/hero.jpg'}
+				alt={'Tokyo skyline'}
+			/>
 			<ContentWrapper>
-				<div className={styles.catchphrasewrapper}>
-                    <Image 
-                        src={'/assets/images/projects/firu/page/spread2.png'}
-                        alt={'Spread showcasing an article from the magazine'}
-                        width={324*1.5}
-                        height={243*1.5}
-                        className={styles.catchphraseimg}
-                        id={styles.spread2}
-                    />
-					<p className={styles.catchphrase}>
-						<StyledText text='Japanophilia is the heavy obsession with everything Japan' />
-					</p>
-                    <div className={styles.catchphrasetextbg}/>
-                    <Image 
-                        src={'/assets/images/projects/firu/page/spread3.png'}
-                        alt={'Spread showcasing an article from the magazine'}
-                        width={324*1.5}
-                        height={243*1.5}
-                        className={styles.catchphraseimg}
-                        id={styles.spread3}
-                    />
-				</div>
+				<Catchphrase
+					phrase={'Japanophilia is the heavy obsession with everything Japan'}
+					color={projColor}
+				>
+					<Image
+						src={'/assets/images/projects/firu/page/spread2.png'}
+						alt={'Spread showcasing an article from the magazine'}
+						width={324 * 1.5}
+						height={243 * 1.5}
+						className={styles.catchphraseimg}
+						id={styles.spread2}
+					/>
+					<Image
+						src={'/assets/images/projects/firu/page/spread3.png'}
+						alt={'Spread showcasing an article from the magazine'}
+						width={324 * 1.5}
+						height={243 * 1.5}
+						className={styles.catchphraseimg}
+						id={styles.spread3}
+					/>
+				</Catchphrase>
 			</ContentWrapper>
 		</div>
 	);
