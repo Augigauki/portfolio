@@ -24,7 +24,7 @@ const Firu = ({}) => {
 	setLineColor(projColor)
 
 	return (
-		<div style={{ paddingBottom: '10rem' }}>
+		<div style={{ paddingBottom: '20rem' }}>
 			<ContentWrapper>
 				<Line color={projColor} />
 				<ProjectContentWrapper>
