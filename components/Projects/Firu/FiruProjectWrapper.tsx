@@ -2,8 +2,13 @@ import Link from 'next/link';
 import StyledText from '../../UI/StyledText';
 import styles from './FiruProjectWrapper.module.css';
 import Image from 'next/image';
+import Meta from '../UI/Meta/Meta';
+import { useColor } from '@/context/ColorContext';
 
 const FiruProjectWrapper = ({}) => {
+
+	const {lineColor} = useColor();
+
 	return (
 		<div
 			className={styles.projectwrapper}
@@ -31,6 +36,7 @@ const FiruProjectWrapper = ({}) => {
 				className={styles.image}
 				id={styles.detail}
 			/>
+			<Meta color={lineColor}>Editorial 2018</Meta>
 			<p
 				className={styles.meta}
 				id={styles.category}

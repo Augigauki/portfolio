@@ -7,6 +7,7 @@ import styles from './Projects.module.css';
 import FiruProjectWrapper from '@/components/Projects/Firu/FiruProjectWrapper';
 import NewTopoProjectWrapper from '@/components/Projects/NewTopo/NewTopoProjectWrapper';
 import { useColor } from '@/context/ColorContext';
+import Line from '@/components/Projects/UI/Line/Line';
 
 const Projects = () => {
 	const firuRef = useRef(null);

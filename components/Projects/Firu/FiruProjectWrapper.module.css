@@ -1,8 +1,8 @@
 .projectwrapper{
     position: relative;
     padding: 33vh 0;
-    --left: 12%;
-    --right: 50%;
+    --left: 6rem;
+    --right: 24rem;
     margin-top: 2rem;
     display: flex;
     align-items: center;
@@ -43,7 +43,7 @@
 .meta#category{
     position: absolute;
     top: 350px;
-    left: 950px;
+    left: 6rem;
 }
 
 .meta#descriptor{
