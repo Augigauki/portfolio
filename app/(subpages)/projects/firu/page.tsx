@@ -41,6 +41,7 @@ const Firu = ({}) => {
 					<ProjectPageTitle
 						text={'Firu'}
 						color={projColor}
+						level={'h1'}
 					/>
 
 					<Meta

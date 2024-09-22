@@ -1,4 +1,4 @@
-'use client'
+'use client';
 
 import ContentWrapper from '@/components/Wrappers/ContentWrapper';
 import styles from './NewTopo.module.css';
@@ -10,7 +10,7 @@ import Meta from '@/components/Projects/UI/Meta/Meta';
 import ProjectFlexWrapper from '@/components/Projects/UI/ProjectFlex/ProjectFlexWrapper';
 import ProjectBodyText from '@/components/Projects/UI/ProjectBodyText/ProjectBodyText';
 import Image from 'next/image';
-import italyman from '@/public/assets/images/projects/newtopo/page/italyman.jpg'
+import italyman from '@/public/assets/images/projects/newtopo/page/italyman.jpg';
 import { useColor } from '@/context/ColorContext';
 
 const NewTopo = ({}) => {
@@ -18,11 +18,11 @@ const NewTopo = ({}) => {
 	const metaLeft = '6rem';
 	const metaRight = '24rem';
 
-	const {setLineColor} = useColor();
-	setLineColor('rgb(113, 39, 58)')
+	const { setLineColor } = useColor();
+	setLineColor('rgb(113, 39, 58)');
 
 	return (
-		<div style={{paddingBottom: '10rem'}}>
+		<div style={{ paddingBottom: '10rem' }}>
 			<ContentWrapper>
 				<Line color={clr} />
 				<ProjectContentWrapper>
@@ -39,6 +39,7 @@ const NewTopo = ({}) => {
 					<ProjectPageTitle
 						text={'New Topographics'}
 						color={'var(--winered)'}
+						level={'h1'}
 					/>
 					<Meta
 						color={clr}

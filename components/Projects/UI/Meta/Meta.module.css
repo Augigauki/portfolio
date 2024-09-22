@@ -4,4 +4,5 @@
     font-size: calc(15em/16);
     font-weight: 400;
     max-width: 28ch;
+    z-index: 3;
 }

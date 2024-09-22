@@ -15,3 +15,42 @@
     z-index: 1;
 }
 
+.projectcontainer{
+    position: relative;
+    width: 100%;
+    padding: 20vh 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10rem;
+}
+
+.title{
+    font-family: 'Editorial Old';
+    font-weight: 200;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: calc(110em/16);
+    z-index: 20;
+    user-select: none;
+}
+
+.titlebg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    background-color: var(--white);
+    z-index: 1;
+}
+
+.projectlink{
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+}

@@ -17,7 +17,7 @@ const NewTopoProjectWrapper = ({}) => {
 			<div className={styles.titlebg} />
 			<Image
 				src={'/assets/images/projects/newtopo/newtopo1.jpg'}
-				alt='FIRU Magazine Spread'
+				alt='Car garage canada'
 				width={325*1.5}
 				height={216*1.5}
 				className={styles.image}
@@ -25,7 +25,7 @@ const NewTopoProjectWrapper = ({}) => {
 			/>
 			<Image
 				src={'/assets/images/projects/newtopo/newtopo2.jpg'}
-				alt='FIRU Detail'
+				alt='Car parking Toronto'
 				width={324 * 1.5}
 				height={220 * 1.5}
 				className={styles.image}

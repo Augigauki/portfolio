@@ -39,3 +39,66 @@
     font-weight: 400;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'MeB';
+    src: url('../public/fonts/dstress/MeB.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'agate';
+    src: url('../public/fonts/dstress/metathesio/agate.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'argnt';
+    src: url('../public/fonts/dstress/metathesio/argnt.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'arial';
+    src: url('../public/fonts/dstress/metathesio/arial.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'avaraitalic';
+    src: url('../public/fonts/dstress/metathesio/avaraitalic.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CirM';
+    src: url('../public/fonts/dstress/metathesio/CirM.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Kaeru';
+    src: url('../public/fonts/dstress/metathesio/Kaeru.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NeueM';
+    src: url('../public/fonts/dstress/metathesio/NeueM.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'macab';
+    src: url('../public/fonts/dstress/macab.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}

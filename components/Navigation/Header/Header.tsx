@@ -10,9 +10,9 @@ import { motion } from 'framer-motion';
 
 const Header = ({}) => {
 	const path = usePathname();
-	const { lineColor, setLineColor } = useColor();
+	const { lineColor, bgColor } = useColor();
 	return (
-		<div className={styles.outerheader}>
+		<motion.div className={styles.outerheader} animate={{backgroundColor: bgColor}}>
 			<ContentWrapper>
 				<div className={styles.header}>
 					<Link
@@ -23,7 +23,6 @@ const Header = ({}) => {
 						<motion.p
 							initial={{ color: 'black' }}
 							animate={{ color: lineColor }}
-							transition={{ duration: 1 }}
 						>
 							Projects
 						</motion.p>
@@ -36,7 +35,6 @@ const Header = ({}) => {
 						<motion.p
 							initial={{ color: 'black' }}
 							animate={{ color: lineColor }}
-							transition={{ duration: 1 }}
 						>
 							<StyledText text={'August Gaukstad'} />
 						</motion.p>
@@ -49,14 +47,13 @@ const Header = ({}) => {
 						<motion.p
 							initial={{ color: 'black' }}
 							animate={{ color: lineColor }}
-							transition={{ duration: 1 }}
 						>
 							About
 						</motion.p>
 					</Link>
 				</div>
 			</ContentWrapper>
-		</div>
+		</motion.div>
 	);
 };
 
