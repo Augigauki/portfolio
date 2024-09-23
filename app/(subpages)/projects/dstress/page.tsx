@@ -15,6 +15,7 @@ import TitleBg from '@/components/Projects/UI/ProjectPageTitle/TitleBg';
 import { Spotify } from 'react-spotify-embed';
 import metathesio from '@/components/Dstress/Sketches/Metathesio';
 import thalasso from '@/components/Dstress/Sketches/Thalasso';
+import trypo from '@/components/Dstress/Sketches/Trypo';
 
 const Dstress = ({}) => {
 	const color = 'var(--white)';
@@ -65,7 +66,7 @@ const Dstress = ({}) => {
 							<TitleBg color={bgColor} />
 						</div>
 						<div className={styles.sketchwrapper}>
-							<div style={{ width: 'unset', height: 'auto', borderRadius: '.75rem', overflow: 'hidden' }}>
+							<div className={styles.sketch} style={{ width: 'unset', height: 'auto', borderRadius: '.75rem', overflow: 'hidden' }}>
 								<P5wrapper sketch={claustro} />
 							</div>
 							<div className={styles.playlistwrapper}>
@@ -87,7 +88,7 @@ const Dstress = ({}) => {
 							<TitleBg color={bgColor} />
 						</div>
 						<div className={styles.sketchwrapper}>
-							<div style={{ width: 'unset', height: 'auto', borderRadius: '.75rem', overflow: 'hidden', outline: '2px solid white' }}>
+							<div className={styles.sketch} style={{ width: 'unset', height: 'auto', borderRadius: '.75rem', overflow: 'hidden', outline: '2px solid white' }}>
 								<P5wrapper sketch={metathesio} />
 							</div>
 							<div className={styles.playlistwrapper}>
@@ -105,11 +106,11 @@ const Dstress = ({}) => {
 							className={styles.phobiaheadingcontainer}
 							style={{ position: 'relative' }}
 						>
-							<h3 className={styles.phobiatitle}>THALASSOPHOBIA</h3>
+							<h3 className={styles.phobiatitle} style={{fontFamily: 'macab'}}>THALASSOPHOBIA</h3>
 							<TitleBg color={bgColor} />
 						</div>
 						<div className={styles.sketchwrapper}>
-							<div style={{ width: 'unset', height: 'auto', borderRadius: '.75rem', overflow: 'hidden', outline: '2px solid white' }}>
+							<div className={styles.sketch} style={{ width: 'unset', height: 'auto', borderRadius: '.75rem', overflow: 'hidden', outline: '2px solid white' }}>
 								<P5wrapper sketch={thalasso} />
 							</div>
 							<div className={styles.playlistwrapper}>
@@ -117,6 +118,28 @@ const Dstress = ({}) => {
 									wide
 									link={
 										'https://open.spotify.com/playlist/2mqGKEXgBQHH3069sR1HOw?si=370572d60f8645ad'
+									}
+								/>
+							</div>
+						</div>
+					</div>
+					<div className={styles.phobiasection}>
+						<div
+							className={styles.phobiaheadingcontainer}
+							style={{ position: 'relative' }}
+						>
+							<h3 className={styles.phobiatitle} style={{fontFamily: 'Kaeru'}}>TRYPOPHOBIA</h3>
+							<TitleBg color={bgColor} />
+						</div>
+						<div className={styles.sketchwrapper}>
+							<div className={styles.sketch} style={{ width: 'unset', height: 'auto', borderRadius: '.75rem', overflow: 'hidden', outline: '2px solid white' }}>
+								<P5wrapper sketch={trypo} />
+							</div>
+							<div className={styles.playlistwrapper}>
+								<Spotify
+									wide
+									link={
+										'https://open.spotify.com/playlist/2KIr5T0lo9hq8ObKU4NJBp?si=4a3e7a3d92334bc8'
 									}
 								/>
 							</div>

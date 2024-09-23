@@ -12,10 +12,21 @@
     display: flex;
     gap: 2rem;
     width: 100%;
+    justify-content: space-between;
+    outline: 1px solid red;
+    max-height: 50vh;
 }
 
-.sketchwrapper div{
+.playlistwrapper{
     flex-basis: 50%;
+    flex-shrink: 1;
+    flex-grow: 0;
+    height: auto;
+}
+
+.sketch{
+    flex-basis: 50%;
+    aspect-ratio: 1 / 1;
 }
 
 .phobiatitle{
