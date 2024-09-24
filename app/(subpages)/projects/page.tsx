@@ -203,12 +203,12 @@ const Projects = () => {
 							</div>
 						</ProjectWrapper>
 					</div>
-					<div ref={dstressRef} className={styles.projectcontainer} style={{outline: '1px solid red'}}>
+					<div ref={dstressRef} className={styles.projectcontainer} id={styles.dstress}>
 						<ProjectWrapper color={white}>
 							<div
 								style={{
 									position: 'absolute',
-									top: '-94%',
+									top: '-0%',
 									left: '5%',
 									transform: 'translate(0)',
 									zIndex: 2,
@@ -225,9 +225,9 @@ const Projects = () => {
 								<Meta
 									color={white}
 									left={'0'}
-									top={'40rem'}
+									top={'33vh'}
 								>
-									New Topographics is an online photography museum
+									Interactive Album Artworks About Phobias
 								</Meta>
 							</div>
 
@@ -246,7 +246,7 @@ const Projects = () => {
 							<div
 								style={{
 									position: 'absolute',
-									bottom: '-175%',
+									bottom: '-17%',
 									right: '0',
 									transform: 'translate(0)',
 									zIndex: 2,
@@ -262,8 +262,8 @@ const Projects = () => {
 								/>
 								<Meta
 									color={white}
-									left={'51%'}
-									top={'-55rem'}
+									left={'0%'}
+									top={'-55vh'}
 								>
 									Code exploration
 								</Meta>

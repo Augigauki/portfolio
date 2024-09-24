@@ -7,7 +7,7 @@
     z-index: 100;
 }
 
-.header{
+.header, .footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -22,9 +22,23 @@
     text-transform: uppercase;
     line-height: 1;
     text-underline-offset: 4px;
+    cursor: pointer;
 }
 
 .navlink:hover{
+    text-decoration: none;
+}
+
+.credits:first-child{
+    text-decoration: underline;
+    color: inherit;
+    text-transform: uppercase;
+    line-height: 1;
+    text-underline-offset: 4px;
+    cursor: pointer;
+}
+
+.credits:first-child:hover{
     text-decoration: none;
 }
 

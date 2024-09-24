@@ -10,7 +10,7 @@ const SubpageLayout = ({children}: {children: ReactNode}) => {
             <ColorProvider>
                 <Header />
                 {children}
-                {/* <Footer /> */}
+                <Footer />
             </ColorProvider>
         </Fragment>
     )

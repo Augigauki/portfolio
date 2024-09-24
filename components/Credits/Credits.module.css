@@ -1,0 +1,116 @@
+.creditswrapper{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 9999;
+}
+
+.link{
+    text-decoration: underline;
+    color: inherit;
+    text-transform: uppercase;
+    line-height: 1;
+    text-underline-offset: 4px;
+    cursor: pointer;
+}
+
+.link:hover{
+    text-decoration: none;
+}
+
+.fadebg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+.creditscontent{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.credits{
+    color: white;
+    font-size: calc(24rem/16);
+    text-align: center;
+    line-height: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.close{
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    cursor: pointer;
+    z-index: 10001;
+    font-size: 24px;
+    color: white;
+}
+
+.creditsgroup{
+    margin: 2rem 0;
+}
+
+.creditsgroup .h2{
+    margin-bottom: 2rem;
+}
+
+.contributor{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 0.75rem;
+}
+
+.name, .role{
+    flex-basis: 50%;
+}
+
+.name{
+    text-align: left;
+}
+
+.role{
+    text-align: right;
+    opacity: 0.75;
+}
+
+.divider{
+    height: 1.5px;
+    background-color: white;
+    width: 100%;
+    margin: 2rem 0;
+}
+
+.h1 {
+	font-size: clamp(64px, 6vw, 120px);
+	font-family: 'Editorial Old';
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+    gap: 0.1em;
+    font-weight: 200;
+}
+
+.h2 {
+	font-size: clamp(32px, 4vw, 48px);
+	font-family: 'Editorial Old';
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+    gap: 0.1em;
+    font-weight: 200;
+}

@@ -1,51 +1,105 @@
-.playlistwrapper{
-    height: 1000px;
-    width: unset;
+.sketchwrapper {
+	display: flex;
+	gap: 2rem;
+	width: 100%;
+	justify-content: space-between;
+	max-height: 70vh;
 }
 
-.playlistwrapper iframe{
-    height: 100%;
-    width: 100%;
+.sketchwrapper2{
+    --size: 50vw;
+    height: var(--size);
+    width: var(--size);
+    border: 1px solid white;
 }
 
-.sketchwrapper{
+.playlistwrapper {
+	flex-basis: 50%;
+	flex-shrink: 1;
+	flex-grow: 0;
+	height: auto;
+	height: 1000px;
+	width: unset;
+}
+
+.playlistwrapper iframe {
+	height: 100%;
+	width: 100%;
+}
+
+.playlistwrapper2 {
+	width: 50vh;
+	height: 364px;
+}
+
+.playlistwrapper2 iframe {
+	height: 100%;
+	width: 100%;
+}
+
+.sketch {
+	flex-basis: 50%;
+	aspect-ratio: 1 / 1;
+}
+
+.phobiatitle {
+	font-family: MeB;
+	color: white;
+	font-size: 100px;
+	position: relative;
+	z-index: 2;
+}
+
+.phobiasection {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+.phobiacontainer{
     display: flex;
-    gap: 2rem;
-    width: 100%;
-    justify-content: space-between;
-    max-height: 70vh;
-}
-
-.playlistwrapper{
-    flex-basis: 50%;
-    flex-shrink: 1;
-    flex-grow: 0;
-    height: auto;
-}
-
-.sketch{
-    flex-basis: 50%;
-    aspect-ratio: 1 / 1;
-}
-
-.phobiatitle{
-    font-family: MeB;
-    color: white;
-    font-size: 100px;
-    position: relative;
-    z-index: 2;
-}
-
-.phobiasection{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-}
-
-.phobiaheadingcontainer{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.phobiacontent {
+	display: flex;
+	gap: 2rem;
+    margin-top: 2rem;
+    align-items: center;
+    width: 50vw;
+}
+
+.phobiacontent * {
+    width: 50%;
+}
+
+.phobiacontent p{
+    max-width: 60ch;
+}
+
+.phobiaheadingcontainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+    position: relative;
+}
+
+.phobiatextwrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 0.5rem;
+	margin-bottom: 2rem;
+}
+
+.bodytext {
+	color: white;
+	background-color: black;
+	padding-bottom: 2rem;
+	font-size: calc(20rem / 16);
 }
