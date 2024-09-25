@@ -5,10 +5,9 @@ type ProjectPageTitleProps = {
     text: string;
     color: string;
     level: 'h1' | 'h2';
-    bg?: boolean;
 }
 
-const ProjectPageTitle = ({text, color, level, bg = true}: ProjectPageTitleProps) => {
+const ProjectPageTitle = ({text, color, level}: ProjectPageTitleProps) => {
     if(level === 'h1'){
         return(
             <h1 className={`${styles.h1}`} style={{color: color}}>
@@ -17,7 +16,7 @@ const ProjectPageTitle = ({text, color, level, bg = true}: ProjectPageTitleProps
         )
     } else if(level === 'h2'){
         return(
-            <h2 className={`${styles.h2} ${bg && styles.bg}`} style={{color: color}}>
+            <h2 className={`${styles.h2}`} style={{color: color}}>
                 <StyledText text={text} />
             </h2>
         )

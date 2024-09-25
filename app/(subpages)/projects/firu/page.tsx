@@ -14,6 +14,7 @@ import ProjectBodyText from '@/components/Projects/UI/ProjectBodyText/ProjectBod
 import LongLongImage from '@/components/Projects/UI/LongLongImage/LongLongImage';
 import Catchphrase from '@/components/Projects/UI/Catchphrase/Catchphrase';
 import { useColor } from '@/context/ColorContext';
+import TitleBg from '@/components/Projects/UI/ProjectPageTitle/TitleBg';
 
 const Firu = ({}) => {
 	const projColor = 'var(--blue)';
@@ -38,11 +39,14 @@ const Firu = ({}) => {
 					>
 						Editorial 2018
 					</Meta>
-					<ProjectPageTitle
-						text={'Firu'}
-						color={projColor}
-						level={'h1'}
-					/>
+					<div style={{position: 'relative'}}>
+						<ProjectPageTitle
+							text={'Firu'}
+							color={projColor}
+							level={'h1'}
+						/>
+						<TitleBg />
+					</div>
 
 					<Meta
 						color={projColor}
@@ -65,10 +69,9 @@ const Firu = ({}) => {
 							/>
 						</div>
 						<ProjectBodyText color={projColor}>
-							Create a lifestyle magazine with a theme of your choice. Design your own layout for an
-							article and set styles for headings and body text. When styles and layout are set, fill the
-							magazine with content and design it accordingly. The layout, styles and content should all
-							reflect the theme chosen.
+						Firu is the result of a course in editorial design at Westerdals Oslo. I chose to create a magazine about japanophilia, designing it inspired by japanese graphic design and culture.
+<br></br><br></br>
+The design reflects a contrast between order and energy, a nod to the contrast between the strictness of Japanese work culture and the wildness of Shibuya meltdowns. Content in the magazine is set in a clean, minimalist and grid-based design, with chaotic, vivid and frantic intermission pages inbetween.
 						</ProjectBodyText>
 					</ProjectFlexWrapper>
 				</ProjectContentWrapper>
@@ -80,7 +83,6 @@ const Firu = ({}) => {
 			<ContentWrapper>
 				<Catchphrase
 					phrase={'Japanophilia is the heavy obsession with everything Japan'}
-					color={projColor}
 				>
 					<Image
 						src={'/assets/images/projects/firu/page/spread2.png'}

@@ -98,7 +98,6 @@ const Projects = () => {
 								className={styles.projectlink}
 							>
 								<ProjectPageTitle
-									bg={false}
 									text={'Firu'}
 									color={firuColor}
 									level={'h2'}
@@ -169,7 +168,6 @@ const Projects = () => {
 								className={styles.projectlink}
 							>
 								<ProjectPageTitle
-									bg={false}
 									text={'New Topographics'}
 									color={newTopoColor}
 									level={'h2'}
@@ -236,7 +234,6 @@ const Projects = () => {
 								className={styles.projectlink}
 							>
 								<ProjectPageTitle
-									bg={false}
 									text={'D.Stress'}
 									color={white}
 									level={'h2'}

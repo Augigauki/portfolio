@@ -1,14 +1,19 @@
 .flex{
     display: flex;
     width: 100%;
+    gap: 2rem;
+}
+
+.flex.reversed{
+    flex-direction: row-reverse;
 }
 
 .fleximgwrapper{
     position: relative;
     flex-basis: 50%;
     height: calc(666em/16);
-    right: 2rem;
     flex-grow: 1;
+    
 }
 
 .fleximgwrapper img{
@@ -19,5 +24,4 @@
     position: relative;
     flex-basis: 50%;
     flex-grow: 1;
-    left: 2rem;
 }

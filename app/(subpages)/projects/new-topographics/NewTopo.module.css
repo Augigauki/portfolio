@@ -2,10 +2,38 @@
     position: relative;
     flex-basis: 50%;
     height: calc(1000em/16);
-    right: 2rem;
     flex-grow: 1;
 }
 
 .fleximgwrapper img{
     object-fit: cover;
+}
+
+#img1, #img2, #img3, #img4{
+    position: absolute;
+    z-index: 2;
+    object-fit: cover;
+}
+
+#img1{
+    left: 0;
+    top: 0;
+    opacity: 0.8;
+}
+
+#img2{
+    right: 0;
+    bottom: 0;
+    opacity: 0.8;
+}
+
+#img3{
+    right: 0;
+    bottom: 0;
+}
+
+#img4{
+    top: 0;
+    left: 0;
+    opacity: 0.7;
 }
