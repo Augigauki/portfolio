@@ -1,8 +1,8 @@
 .heroimgwrapper{
     width: 100%;
-    height: clamp(764px, 55vh, 1000px);
+    height: clamp(800px, 80vh, 900px);
     position: relative;
-    margin-top: 120px;
+    margin-top: calc(82rem/16);
     box-shadow: 0 0 0 30px var(--white);
     margin-bottom: 30px;
 }

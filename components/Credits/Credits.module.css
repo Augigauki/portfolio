@@ -95,9 +95,8 @@
     margin: 2rem 0;
 }
 
-.h1 {
-	font-size: clamp(64px, 6vw, 120px);
-	font-family: 'Editorial Old';
+.h1, .h2, .h3{
+    font-family: 'Editorial Old';
     font-style: italic;
     display: flex;
     justify-content: center;
@@ -105,12 +104,16 @@
     font-weight: 200;
 }
 
+.h1 {
+	font-size: clamp(64px, 6vw, 120px);
+}
+
 .h2 {
 	font-size: clamp(32px, 4vw, 48px);
-	font-family: 'Editorial Old';
-    font-style: italic;
-    display: flex;
-    justify-content: center;
-    gap: 0.1em;
-    font-weight: 200;
+}
+
+.h3{
+    padding-top: 1.5rem;
+    margin-bottom: 1rem;
+    font-size: clamp(24px, 3vw, 32px);
 }

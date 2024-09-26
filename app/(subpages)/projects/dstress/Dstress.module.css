@@ -10,7 +10,8 @@
     --size: 50vw;
     height: var(--size);
     width: var(--size);
-    border: 1px solid white;
+    outline: 20px solid black;
+	border: 1px solid white;
 }
 
 .playlistwrapper {

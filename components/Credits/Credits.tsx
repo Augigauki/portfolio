@@ -9,7 +9,7 @@ import { useColor } from '@/context/ColorContext';
 
 const Credits = ({}) => {
 	const [showCredits, setShowCredits] = useState(false);
-    const {lineColor} = useColor();
+	const { lineColor } = useColor();
 
 	const handleShow = () => {
 		setShowCredits(true);
@@ -27,8 +27,8 @@ const Credits = ({}) => {
 	const creditsVariants = {
 		hidden: { y: '100%' },
 		visible: {
-			y: '-100vh',
-			transition: { duration: 60, ease: 'linear' },
+			y: '10%',
+			transition: { duration: 0, ease: 'linear' },
 		},
 	};
 
@@ -37,7 +37,7 @@ const Credits = ({}) => {
 			<p
 				className={styles.link}
 				onClick={handleShow}
-                style={{color: lineColor}}
+				style={{ color: lineColor }}
 			>
 				Credits
 			</p>
@@ -79,13 +79,18 @@ const Credits = ({}) => {
 									<StyledText text={'Core team'} />
 								</p>
 								<Contributor
-									name={'Solveig Hisdal'}
-									role={'Lead Design'}
+									name={'August Gaukstad'}
+									role={'Director'}
 								/>
 								<Contributor
 									name={'August Gaukstad'}
-									role={'Design'}
+									role={'Producer'}
 								/>
+								<Contributor
+									name={'Solveig Hisdal'}
+									role={'Creative Director'}
+								/>
+
 								<Contributor
 									name={'August Gaukstad'}
 									role={'Lead Developer'}
@@ -97,6 +102,64 @@ const Credits = ({}) => {
 								<Contributor
 									name={'My Spotify Playlists'}
 									role={'Psychiatrist'}
+								/>
+							</div>
+							<div className={styles.creditsgroup}>
+								<p className={styles.h2}>
+									<StyledText text={'Design'} />
+								</p>
+								<Contributor
+									name={'Solveig Hisdal'}
+									role={'Lead Designer'}
+								/>
+								<Contributor
+									name={'August Gaukstad'}
+									role={'Designer'}
+								/>
+								<p className={styles.h3}>
+									<StyledText text={'Inspiration'} />
+								</p>
+								<Contributor
+									name={'hoverstat.es'}
+									role={'Website'}
+								/>
+								<p className={styles.h3}>
+									<StyledText text={'Fonts'} />
+								</p>
+								<Contributor
+									name={'Editorial Old'}
+									role={'Headings'}
+								/>
+								<Contributor
+									name={'Neue Montreal'}
+									role={'Body text'}
+								/>
+								<p className={styles.h3}>
+									<StyledText text={'Colors'} />
+								</p>
+								<Contributor
+									name={'#05429B'}
+									role={'Blue'}
+								/>
+								<Contributor
+									name={'#988870'}
+									role={'Beige'}
+								/>
+								<Contributor
+									name={'#71273A'}
+									role={'Wine red'}
+								/>
+								<Contributor
+									name={'#666135'}
+									role={'Green'}
+								/>
+								<Contributor
+									name={'#FFFFFF'}
+									role={'White'}
+								/>
+								<Contributor
+									name={'#000000'}
+									role={'White'}
 								/>
 							</div>
 							<div className={styles.creditsgroup}>
@@ -118,12 +181,12 @@ const Credits = ({}) => {
 							</div>
 							<div className={styles.creditsgroup}>
 								<p className={styles.h2}>
-									<StyledText text={'Friendly Characters'} />
+									<StyledText text={'Special thanks'} />
 								</p>
-                                <Contributor
-                                    name={'Solveig Hisdal'}
-                                    role={'Brainstormer'}
-                                />
+								<Contributor
+									name={'Solveig Hisdal'}
+									role={'Brainstormer'}
+								/>
 								<Contributor
 									name={'Espen Jensvold'}
 									role={'Brainstormer'}
