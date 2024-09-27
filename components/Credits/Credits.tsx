@@ -27,8 +27,8 @@ const Credits = ({}) => {
 	const creditsVariants = {
 		hidden: { y: '100%' },
 		visible: {
-			y: '10%',
-			transition: { duration: 0, ease: 'linear' },
+			y: '-100vh',
+			transition: { duration: 60, ease: 'linear' },
 		},
 	};
 
@@ -159,7 +159,7 @@ const Credits = ({}) => {
 								/>
 								<Contributor
 									name={'#000000'}
-									role={'White'}
+									role={'Black'}
 								/>
 							</div>
 							<div className={styles.creditsgroup}>
