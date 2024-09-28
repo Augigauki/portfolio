@@ -9,7 +9,12 @@ let color1: p5.Color, color2: p5.Color;
 let waveColor1: p5.Color, waveColor2: p5.Color, waveColor3: p5.Color;
 
 let mouseIn = false;
-let xinc = window.innerWidth / 200;
+let xinc: number;
+
+if(typeof window !== 'undefined'){
+	xinc = window.innerWidth / 200;
+}
+
 let str = 'T H A L A S S O';
 let ltr = 'T H A L S O';
 let wavePoses = 26;
@@ -226,6 +231,9 @@ class Star {
 }
 
 const thalasso = (p: p5, width: number, height: number) => {
+	if(typeof window === 'undefined'){
+		return;
+	}
 	p.preload = () => {
 		font = p.loadFont('/fonts/dstress/macab.otf');
 	};

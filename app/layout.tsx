@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import './fonts.css';
 import './reset.css';
 import './globals.css';
-import Header from '@/components/Navigation/Header/Header';
-import Footer from '@/components/Navigation/Footer/Footer';
+import './ids.css';
+import { ColorProvider } from '@/context/ColorContext';
 
 export const metadata: Metadata = {
 	title: 'August Gaukstad',
@@ -17,7 +17,9 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang='en'>
-			<body>{children}</body>
+			<body>
+				<ColorProvider>{children}</ColorProvider>
+			</body>
 		</html>
 	);
 }

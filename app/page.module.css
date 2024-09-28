@@ -3,6 +3,11 @@
   width: 100vw;
   position: relative;
   color: var(--green);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8rem;
 }
 
 .line{
@@ -16,13 +21,13 @@
 }
 
 .maintitle{
-  position: absolute;
+  position: relative;
   font-family: 'Editorial Old';
   font-style: italic;
   font-size: calc(120rem/16);
-  top: 50%;
+  /* top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
   font-weight: 200;
   user-select: none;
   background-color: var(--white);
@@ -30,23 +35,36 @@
   display: flex;
   justify-content: center;
   gap: 1%;
+  z-index: 100;
 }
 
 .link{
   color: inherit;
   text-transform: uppercase;
+  text-underline-offset: 4px;
+}
+
+.link:hover{
+  text-decoration: none;
+}
+
+.creditscontainer{
+  position: relative;
+  left: 6rem;
+}
+
+.creditscontainer a{
+  color: inherit;
 }
 
 #projects{
-  position: absolute;
-  left: 1rem;
-  top: 36%;
-  text-align: right;
+  position: relative;
+  left: 6rem;
+  text-align: left;
 }
 
 #about{
-  position: absolute;
-  left: -5rem;
-  top: 64%;
+  position: relative;
+  left: -6rem;
   text-align: right;
 }

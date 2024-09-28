@@ -31,6 +31,7 @@ const Projects = () => {
 	const { lineColor, setLineColor, bgColor, setBgColor } = useColor();
 
 	useEffect(() => {
+		console.log('yo');
 		if (firuInView) {
 			setLineColor(firuColor);
 			setBgColor(white);
@@ -45,31 +46,27 @@ const Projects = () => {
 			setBgColor(white);
 		}
 	}, [firuInView, newTopoInView, dstressInView, setBgColor, setLineColor]);
-	console.log(bgColor);
+
 	return (
-		<motion.div animate={{ backgroundColor: bgColor }}>
+		<motion.div
+			animate={{ backgroundColor: bgColor }}
+			initial={{ backgroundColor: bgColor }}
+			transition={{duration: 0.5}}
+		>
 			<ContentWrapper>
 				<div className={styles.outerwrapper}>
 					<motion.div
 						className={styles.line}
 						initial={{ backgroundColor: lineColor }}
 						animate={{ backgroundColor: lineColor }}
-						transition={{ duration: 1 }}
+						transition={{ duration: 0.5 }}
 					/>
 					<div
 						ref={firuRef}
 						className={styles.projectcontainer}
 					>
 						<ProjectWrapper color={'rgb(5, 66, 155)'}>
-							<div
-								style={{
-									position: 'absolute',
-									top: '-94%',
-									left: '5%',
-									transform: 'translate(0)',
-									zIndex: 2,
-								}}
-							>
+							<div id={styles.firuimg1}>
 								<Image
 									src={'/assets/images/projects/firu/spread_1.jpg'}
 									alt='FIRU Magazine Spread'
@@ -81,15 +78,16 @@ const Projects = () => {
 								/>
 								<Meta
 									color={firuColor}
+									id={'pp-firu-descriptor'}
 									right={'0'}
-									bottom={'-2rem'}
+									bottom={'0'}
 								>
 									Firu is a magazine about japanophilia
 								</Meta>
 							</div>
 							<Meta
 								color={firuColor}
-								left={'6rem'}
+								id={'pp-firu-category'}
 							>
 								Editorial 2018
 							</Meta>
@@ -107,26 +105,18 @@ const Projects = () => {
 
 							<Meta
 								color={firuColor}
-								left={'6rem'}
+								id='pp-firu-client'
 							>
 								Schoolwork
 							</Meta>
-							<div
-								style={{
-									position: 'absolute',
-									bottom: '-15%',
-									right: '0',
-									transform: 'translate(0)',
-									zIndex: 2,
-								}}
-							>
+							<div id={styles.firuimg2}>
 								<Image
 									src={'/assets/images/projects/firu/detail.jpg'}
 									alt='FIRU Detail'
 									width={324 * 1.5}
 									height={220 * 1.5}
 									className={styles.image}
-									id={styles.detail}
+									id={styles.firudetail}
 									style={{ maxWidth: 'unset' }}
 								/>
 							</div>
@@ -137,25 +127,18 @@ const Projects = () => {
 						className={styles.projectcontainer}
 					>
 						<ProjectWrapper color={newTopoColor}>
-							<div
-								style={{
-									position: 'absolute',
-									top: '-94%',
-									left: '5%',
-									transform: 'translate(0)',
-									zIndex: 2,
-								}}
-							>
+							<div id={styles.newtopoimg1}>
 								<Image
 									src={'/assets/images/projects/newtopo/newtopo1.jpg'}
 									alt='Car garage canada'
 									width={325 * 1.5}
 									height={216 * 1.5}
 									className={styles.image}
-									id={styles.firuspread}
+									id={styles.canadacar}
 								/>
 								<Meta
 									color={newTopoColor}
+									id='pp-newtopo-descriptor'
 									left={'0'}
 									top={'40rem'}
 								>
@@ -174,15 +157,7 @@ const Projects = () => {
 								/>
 								<TitleBg color={bgColor} />
 							</Link>
-							<div
-								style={{
-									position: 'absolute',
-									bottom: '-175%',
-									right: '0',
-									transform: 'translate(0)',
-									zIndex: 2,
-								}}
-							>
+							<div id={styles.newtopoimg2}>
 								<Image
 									src={'/assets/images/projects/newtopo/newtopo2.jpg'}
 									alt='Intility'
@@ -193,42 +168,37 @@ const Projects = () => {
 								/>
 								<Meta
 									color={newTopoColor}
-									left={'51%'}
-									top={'-55rem'}
+									id='pp-newtopo-category'
 								>
 									Webdesign & development
 								</Meta>
 							</div>
 						</ProjectWrapper>
 					</div>
-					<div ref={dstressRef} className={styles.projectcontainer} id={styles.dstress}>
+					<div
+						ref={dstressRef}
+						className={styles.projectcontainer}
+						id={styles.dstress}
+					>
 						<ProjectWrapper color={white}>
-							<div
-								style={{
-									position: 'absolute',
-									top: '-0%',
-									left: '5%',
-									transform: 'translate(0)',
-									zIndex: 2,
-								}}
-							>
+							<div id={styles.dstressimg1}>
 								<Image
-									src={'/assets/images/projects/newtopo/newtopo1.jpg'}
-									alt='Car garage canada'
-									width={325 * 1.5}
-									height={216 * 1.5}
+									src={'/assets/images/projects/dstress/CLAUSTRO.jpg'}
+									alt='Thumbnail for interactive Claustrophobia artwork'
+									width={600}
+									height={600}
 									className={styles.image}
-									id={styles.firuspread}
+									id={styles.claustro}
 								/>
-								<Meta
-									color={white}
-									left={'0'}
-									top={'33vh'}
-								>
-									Interactive Album Artworks About Phobias
-								</Meta>
 							</div>
-
+							<Meta
+								color={white}
+								id={'pp-dstress-descriptor'}
+								left={'0'}
+								top={'33vh'}
+							>
+								Interactive Album Artworks About Phobias
+							</Meta>
 							<Link
 								href={'/projects/dstress'}
 								className={styles.projectlink}
@@ -240,30 +210,24 @@ const Projects = () => {
 								/>
 								<TitleBg color={bgColor} />
 							</Link>
-							<div
-								style={{
-									position: 'absolute',
-									bottom: '-17%',
-									right: '0',
-									transform: 'translate(0)',
-									zIndex: 2,
-								}}
+							<Meta
+								color={white}
+								id={'pp-dstress-type'}
+								left={'0%'}
+								top={'-55vh'}
 							>
+								Code exploration
+							</Meta>
+							<div id={styles.dstressimg2}>
 								<Image
-									src={'/assets/images/projects/newtopo/newtopo2.jpg'}
+									src={'/assets/images/projects/dstress/METATHESIO.gif'}
 									alt='Intility'
-									width={324 * 1.5}
-									height={220 * 1.5}
+									width={600}
+									height={600}
 									className={styles.image}
-									id={styles.detail}
+									id={styles.metathesio}
+									unoptimized
 								/>
-								<Meta
-									color={white}
-									left={'0%'}
-									top={'-55vh'}
-								>
-									Code exploration
-								</Meta>
 							</div>
 						</ProjectWrapper>
 					</div>

@@ -16,7 +16,7 @@ const ColorContext = createContext<ColorContextType | undefined>(undefined);
 
 // Create a provider component
 export const ColorProvider = ({ children }: { children: ReactNode }) => {
-  const [lineColor, setLineColor] = useState('rgb(5, 66, 155)');
+  const [lineColor, setLineColor] = useState('rgb(255, 255, 255)');
   const [bgColor, setBgColor] = useState('rgb(255, 255, 255)');
 
   return (

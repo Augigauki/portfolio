@@ -48,10 +48,21 @@ class Letter {
 		this.font = Lfont;
 		this.ofont = Ofont;
 		this.change = false;
-		this.bounds = this.font.textBounds(this.str, this.x, this.y) as Bounds;
+		this.size = 16;
+		/* this.bounds = this.font.textBounds(this.str, this.x, this.y) as Bounds; */
+		if (this.font) {
+			this.bounds = {
+			  x: this.x - this.p.textWidth(this.str) / 2,
+			  y: this.y - this.size / 2,
+			  w: this.p.textWidth(this.str),
+			  h: this.size,
+			  advance: this.p.textWidth(this.str)
+			};
+		  } else {
+			this.bounds = { x: 0, y: 0, w: 0, h: 0, advance: this.p.textWidth(this.str) }; // Provide default values until the font is loaded
+		  }
 		this.textChanged = txtChng;
 		this.farge = 200;
-		this.size = 16;
 	}
 
 	updateFont() {
@@ -116,6 +127,9 @@ class Brush {
 }
 
 const metathesio = (p: p5, width: number, height: number) => {
+	if(typeof window === 'undefined'){
+		return;
+	}
 	let painter: Brush;
 	let mouseVec: p5.Vector;
 

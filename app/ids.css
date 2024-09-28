@@ -1,0 +1,82 @@
+#pp-firu-descriptor {
+	bottom: -2rem;
+}
+
+#pp-firu-category,
+#pp-firu-client {
+	left: 6%;
+}
+
+#pp-newtopo-descriptor {
+	top: 40rem;
+}
+
+#pp-newtopo-category{
+    left: 51%;
+    top: -55rem;
+}
+
+#pp-dstress-descriptor{
+    left: 12rem;
+}
+
+#pp-dstress-type{
+    left: -8rem;
+}
+
+/*? FIRU */
+
+#firu-type{
+    left: 6rem;
+}
+
+#firu-desc{
+    right: 18rem
+}
+
+#firu-client{
+    left: 6rem;
+}
+
+/*! NEW TOPO PAGE */
+
+#newtopo-type{
+    left: 6rem;
+}
+
+#newtopo-desc{
+    right: 12rem;
+}
+
+/*? DSTRESS PAGE */
+
+#dstress-type{
+    left: 10rem;
+}
+
+#dstress-desc{
+    right: 10rem;
+}
+
+@media (max-width: 868px) {
+	#pp-firu-category {
+		left: 4rem;
+	}
+
+	#pp-firu-client {
+		left: -4rem;
+	}
+
+	#pp-firu-descriptor {
+		position: absolute;
+		bottom: -4rem;
+	}
+
+	#pp-newtopo-descriptor {
+		position: absolute;
+		left: 0;
+		top: 100%;
+        padding-top: 0.75rem;
+        max-width: 26ch;
+	}
+}

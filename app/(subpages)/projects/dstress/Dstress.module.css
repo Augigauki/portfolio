@@ -1,106 +1,91 @@
-.sketchwrapper {
+.dstress{
+	padding-bottom: 10rem;
+}
+
+.phobwrapper {
 	display: flex;
-	gap: 2rem;
-	width: 100%;
-	justify-content: space-between;
-	max-height: 70vh;
-}
-
-.sketchwrapper2{
-    --size: 50vw;
-    height: var(--size);
-    width: var(--size);
-    outline: 20px solid black;
-	border: 1px solid white;
-}
-
-.playlistwrapper {
-	flex-basis: 50%;
-	flex-shrink: 1;
-	flex-grow: 0;
-	height: auto;
-	height: 1000px;
-	width: unset;
-}
-
-.playlistwrapper iframe {
-	height: 100%;
-	width: 100%;
-}
-
-.playlistwrapper2 {
-	width: 50vh;
-	height: 364px;
-}
-
-.playlistwrapper2 iframe {
-	height: 100%;
-	width: 100%;
-}
-
-.sketch {
-	flex-basis: 50%;
-	aspect-ratio: 1 / 1;
-}
-
-.phobiatitle {
-	font-family: MeB;
+	flex-direction: column;
+	gap: calc(48rem / 16);
 	color: white;
-	font-size: 100px;
-	position: relative;
-	z-index: 2;
-}
-
-.phobiasection {
 	width: 100%;
+}
+
+.phobtextwrapper {
+	display: flex;
+	gap: 0rem;
+	width: 100%;
+}
+
+.h2 {
+	flex-basis: 50%;
+	font-style: italic;
+	font-weight: 200;
+	font-size: calc(50rem / 16);
+}
+
+.phobinfo {
+	flex-basis: 50%;
 	display: flex;
 	flex-direction: column;
-	gap: 2rem;
-}
-
-.phobiacontainer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.phobiacontent {
-	display: flex;
-	gap: 2rem;
-    margin-top: 2rem;
-    align-items: center;
-    width: 50vw;
-}
-
-.phobiacontent * {
-    width: 50%;
-}
-
-.phobiacontent p{
-    max-width: 60ch;
-}
-
-.phobiaheadingcontainer {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-    position: relative;
-}
-
-.phobiatextwrapper {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	gap: 0.5rem;
-	margin-bottom: 2rem;
-}
-
-.bodytext {
-	color: white;
-	background-color: black;
-	padding-bottom: 2rem;
+	gap: 1rem;
 	font-size: calc(20rem / 16);
+	padding-left: 2rem;
+	max-width: 60ch;
+}
+
+.descriptor {
+	font-style: italic;
+	text-transform: uppercase;
+}
+
+.playlist {
+	width: 50%;
+	padding-right: 2rem;
+}
+
+.playlist iframe {
+	width: 100%;
+}
+
+.centered {
+	
+	align-self:  center;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+.sketchwrapper {
+	--size: 50vw;
+	width: var(--size);
+	height: var(--size);
+	background-color: black;
+	outline: 20px solid black;
+	border: 1px solid white;
+	overflow: hidden;
+}
+
+.intermissionwrapper{
+	padding-top: calc(64rem/16);
+	background-color: black;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.intermission{
+	color: white;
+	font-family: 'Editorial Old';
+	text-transform: uppercase;
+	font-size: 12vw;
+	text-align: center;
+	font-style: italic;
+	font-weight: 200;
+	max-width: 16ch;
+	line-height: 1;
+	display: flex;
+	gap: 1rem;
+	flex-wrap: wrap;
+	justify-content: center;
 }

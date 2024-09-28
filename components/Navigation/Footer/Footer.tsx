@@ -17,41 +17,6 @@ const Footer = ({}) => {
 		>
 			<ContentWrapper>
 				<div className={styles.footer}>
-					<Link
-						className={styles.navlink}
-						href={'/projects'}
-					>
-						<motion.p
-							initial={{ color: 'black' }}
-							animate={{ color: lineColor }}
-						>
-							Projects
-						</motion.p>
-					</Link>
-					<Link
-						href={'/'}
-						className={styles.title}
-						style={{ color: lineColor }}
-					>
-						<motion.p
-							initial={{ color: 'black' }}
-							animate={{ color: lineColor }}
-						>
-							<StyledText text={'August Gaukstad'} />
-						</motion.p>
-					</Link>
-					{/* <Link
-						className={styles.navlink}
-						href={'/about'}
-						style={{ color: lineColor }}
-					>
-						<motion.p
-							initial={{ color: 'black' }}
-							animate={{ color: lineColor }}
-						>
-							About
-						</motion.p>
-					</Link> */}
 					<Credits />
 				</div>
 			</ContentWrapper>

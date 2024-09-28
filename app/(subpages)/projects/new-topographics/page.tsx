@@ -27,17 +27,22 @@ const NewTopo = ({}) => {
 	setLineColor('rgb(113, 39, 58)');
 
 	return (
-		<div style={{ paddingBottom: '10rem' }}>
+		<div
+			style={{ paddingBottom: '10rem' }}
+			className={styles.newtopowrapper}
+		>
 			<ContentWrapper>
 				<Line color={clr} />
 				<ProjectContentWrapper>
-					<HeroImageWrapper
-						src={`${imgpath}hero.jpg`}
-						alt={'Architecture photograph'}
-					/>
+					<div className={styles.heroimgwrapper}>
+						<HeroImageWrapper
+							src={`${imgpath}New-topo-hero.gif`}
+							alt={'Architecture photograph'}
+						/>
+					</div>
 					<Meta
 						color={clr}
-						left={'6rem'}
+						id='newtopo-type'
 					>
 						Website 2019
 					</Meta>
@@ -47,21 +52,30 @@ const NewTopo = ({}) => {
 							color={'var(--winered)'}
 							level={'h1'}
 						/>
-						<TitleBg />
+						<TitleBg color='white' />
 					</div>
 					<Meta
 						color={clr}
-						right={metaRight}
+						id='newtopo-desc'
 					>
 						New Topographics is an online photography museum
 					</Meta>
 					<ProjectFlexWrapper>
-						<div className={styles.fleximgwrapper}>
+						{/* <div className={styles.fleximgwrapper}>
 							<Image
 								src={italyman}
 								alt='Person walking up old italian city streets, parked cars at the side of the road and a wall with vines growing on it at the edge of the road. Old buildings in the background.'
 								fill={true}
 							/>
+						</div> */}
+						<div className={styles.flexvidwrapper}>
+							<video
+								src='/assets/images/projects/newtopo/page/newtopo-canada-vid.webm'
+								autoPlay
+								muted
+								loop
+								controls={false}
+							></video>
 						</div>
 						<ProjectBodyText color={clr}>
 							The culmination of a course in exploration in visual design at Westerdals, New Topographics
@@ -103,12 +117,21 @@ const NewTopo = ({}) => {
 						/>
 					</Catchphrase>
 					<ProjectFlexWrapper reverse={true}>
-						<div className={styles.fleximgwrapper}>
+						{/* <div className={styles.fleximgwrapper}>
 							<Image
 								src={`${imgpath}flex-2.jpg`}
 								alt='Person walking up old italian city streets, parked cars at the side of the road and a wall with vines growing on it at the edge of the road. Old buildings in the background.'
 								fill={true}
 							/>
+						</div> */}
+						<div className={styles.flexvidwrapper}>
+							<video
+								src='/assets/images/projects/newtopo/page/newtopo-august.webm'
+								autoPlay
+								muted
+								loop
+								controls={false}
+							></video>
 						</div>
 						<ProjectBodyText color={clr}>
 							The museum is a collaborative project, showcasing New Topographics photography from friends
@@ -123,7 +146,9 @@ const NewTopo = ({}) => {
 							in Google Streetview.
 						</ProjectBodyText>
 					</ProjectFlexWrapper>
-					<Catchphrase phrase={'Abandoning the romanticism and idealism associated with landscape photography'}>
+					<Catchphrase
+						phrase={'Abandoning the romanticism and idealism associated with landscape photography'}
+					>
 						<Image
 							src={`${imgpath}cp-3.jpg`}
 							alt='test'

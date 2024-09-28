@@ -1,3 +1,11 @@
+.heroimgwrapper{
+    width: 100%;
+}
+
+.heroimgwrapper > * > img{
+    object-position: top;
+}
+
 .fleximgwrapper{
     position: relative;
     flex-basis: 50%;
@@ -9,6 +17,16 @@
     object-fit: cover;
 }
 
+.flexvidwrapper{
+    flex-basis: 50%;
+    height: auto;
+    flex-grow: 1;
+}
+
+.flexvidwrapper video{
+    width: 100%;
+}
+
 #img1, #img2, #img3, #img4{
     position: absolute;
     z-index: 2;
@@ -16,23 +34,32 @@
 }
 
 #img1{
+    width: 33vw;
+    height: auto;
     left: 0;
     top: 0;
     opacity: 0.8;
 }
 
 #img2{
+    width: 33vw;
+    height: auto;
     right: 0;
     bottom: 0;
     opacity: 0.8;
 }
 
 #img3{
+    width: 25vw;
+    height: auto;
     right: 0;
     bottom: 0;
+    opacity: 0.7;
 }
 
 #img4{
+    width: 30vw;
+    height: auto;
     top: 0;
     left: 0;
     opacity: 0.7;

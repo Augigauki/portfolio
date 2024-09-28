@@ -1,3 +1,6 @@
+'use client'
+
+import { useColor } from '@/context/ColorContext';
 import styles from './HeroImageWrapper.module.css';
 import Image from 'next/image';
 
@@ -7,12 +10,16 @@ type HeroImgProps = {
 }
 
 const HeroImageWrapper = ({src, alt}: HeroImgProps) => {
+
+	const {bgColor} = useColor();
+
 	return (
-		<div className={styles.heroimgwrapper}>
+		<div className={styles.heroimgwrapper} style={{boxShadow: `0 0 0 30px ${bgColor}`}}>
 			<Image
 				src={src}
 				alt={alt}
 				fill={true}
+				unoptimized
 			/>
 		</div>
 	);

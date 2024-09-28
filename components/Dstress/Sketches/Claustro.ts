@@ -97,6 +97,9 @@ class Brush {
 }
 
 const claustro = (p: p5, width: number, height: number) => {
+	if(typeof window === 'undefined'){
+		return;
+	}
 	p.preload = () => {
 		font = p.loadFont('/fonts/dstress/MeB.ttf');
 	};

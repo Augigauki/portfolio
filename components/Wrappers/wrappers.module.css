@@ -23,3 +23,13 @@
         /* outline: 1px solid red; */
     }
 }
+
+@media(max-width: 868px){
+    .contentwrapper{
+        padding: 0 calc(20rem/16);
+    }
+
+    .projectcontentwrapper{
+        gap: 4rem;
+    }
+}

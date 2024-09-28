@@ -17,6 +17,9 @@ let protection = 0;
 let letters: Letter[] = [];
 
 const trypo = (p: p5, width: number, height: number) => {
+  if(typeof window === 'undefined'){
+		return;
+	}
   p.preload = () => {
     ibm = p.loadFont('/fonts/dstress/metathesio/Kaeru.otf');
   };

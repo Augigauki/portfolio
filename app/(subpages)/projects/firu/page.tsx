@@ -1,4 +1,4 @@
-'use client'
+'use client';
 
 import ContentWrapper from '@/components/Wrappers/ContentWrapper';
 import styles from './Firu.module.css';
@@ -21,11 +21,11 @@ const Firu = ({}) => {
 	const metaLeft = '6rem';
 	const metaRight = '24rem';
 
-	const {setLineColor} = useColor();
-	setLineColor(projColor)
+	const { setLineColor } = useColor();
+	setLineColor(projColor);
 
 	return (
-		<div style={{ paddingBottom: '20rem' }}>
+		<div>
 			<ContentWrapper>
 				<Line color={projColor} />
 				<ProjectContentWrapper>
@@ -35,11 +35,12 @@ const Firu = ({}) => {
 					/>
 					<Meta
 						color={projColor}
+						id='firu-type'
 						left={metaLeft}
 					>
 						Editorial 2018
 					</Meta>
-					<div style={{position: 'relative'}}>
+					<div style={{ position: 'relative' }}>
 						<ProjectPageTitle
 							text={'Firu'}
 							color={projColor}
@@ -51,11 +52,13 @@ const Firu = ({}) => {
 					<Meta
 						color={projColor}
 						right={metaRight}
+						id='firu-desc'
 					>
 						Firu is a magazine about japanophilia
 					</Meta>
 					<Meta
 						color={projColor}
+						id='firu-client'
 						left={metaLeft}
 					>
 						Schoolwork
@@ -69,21 +72,24 @@ const Firu = ({}) => {
 							/>
 						</div>
 						<ProjectBodyText color={projColor}>
-						Firu is the result of a course in editorial design at Westerdals Oslo. I chose to create a magazine about japanophilia, designing it inspired by japanese graphic design and culture.
-<br></br><br></br>
-The design reflects a contrast between order and energy, a nod to the contrast between the strictness of Japanese work culture and the wildness of Shibuya meltdowns. Content in the magazine is set in a clean, minimalist and grid-based design, with chaotic, vivid and frantic intermission pages inbetween.
+							Firu is the result of a course in editorial design at Westerdals Oslo. I chose to create a
+							magazine about japanophilia, designing it inspired by japanese graphic design and culture.
+							<br></br>
+							<br></br>
+							The design reflects a contrast between order and energy, a nod to the contrast between the
+							strictness of Japanese work culture and the wildness of Shibuya meltdowns. Content in the
+							magazine is set in a clean, minimalist and grid-based design, with chaotic, vivid and
+							frantic intermission pages inbetween.
 						</ProjectBodyText>
 					</ProjectFlexWrapper>
 				</ProjectContentWrapper>
 			</ContentWrapper>
 			<LongLongImage
-				src={'/assets/images/projects/firu/page/hero.jpg'}
+				src={'/assets/images/projects/firu/page/FIRU53.jpg'}
 				alt={'Tokyo skyline'}
 			/>
 			<ContentWrapper>
-				<Catchphrase
-					phrase={'Japanophilia is the heavy obsession with everything Japan'}
-				>
+				<Catchphrase phrase={'Japanophilia is the heavy obsession with everything Japan'}>
 					<Image
 						src={'/assets/images/projects/firu/page/spread2.png'}
 						alt={'Spread showcasing an article from the magazine'}

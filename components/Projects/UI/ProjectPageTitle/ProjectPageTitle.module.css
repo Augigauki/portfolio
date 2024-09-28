@@ -23,3 +23,9 @@
 .h2{
     font-size: calc(110em/16);
 }
+
+@media(max-width: 868px){
+    .h2{
+        font-size: calc(82rem/16);
+    }
+}
