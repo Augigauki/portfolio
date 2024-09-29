@@ -25,7 +25,7 @@
 }
 
 @media(max-width: 868px){
-    .h2{
+    .h1, .h2{
         font-size: calc(82rem/16);
     }
 }

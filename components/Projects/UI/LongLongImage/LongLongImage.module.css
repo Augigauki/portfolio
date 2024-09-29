@@ -10,3 +10,15 @@
 .bigimgwrapper img{
     object-fit: cover;
 }
+
+@media(max-width: 767px){
+    .bigimgwrapper{
+        height: auto;
+        aspect-ratio: 1 / 1.414;
+    }
+
+    .bigimgwrapper img{
+        height: auto;
+        width: 100%;
+    }
+}

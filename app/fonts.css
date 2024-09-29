@@ -54,6 +54,8 @@
     font-style: italic;
 }
 
+/*! DSTRESS */
+
 @font-face {
     font-family: 'MeB';
     src: url('../public/fonts/dstress/MeB.ttf') format('truetype');
@@ -113,6 +115,29 @@
 @font-face {
     font-family: 'macab';
     src: url('../public/fonts/dstress/macab.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*? FIRU */
+
+@font-face {
+    font-family: 'Space Mono';
+    src: url('../public/fonts/firu/SpaceMono-Bold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sometype Mono Variable';
+    src: url('../public/fonts/firu/SometypeMono-VariableFont_wght.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Komorebi Gothic P';
+    src: url('../public/fonts/firu/komorebi-gothic-P.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
 }

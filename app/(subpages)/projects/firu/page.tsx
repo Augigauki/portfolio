@@ -18,8 +18,8 @@ import TitleBg from '@/components/Projects/UI/ProjectPageTitle/TitleBg';
 
 const Firu = ({}) => {
 	const projColor = 'var(--blue)';
-	const metaLeft = '6rem';
-	const metaRight = '24rem';
+
+	const imgpath = '/assets/images/projects/firu/page';
 
 	const { setLineColor } = useColor();
 	setLineColor(projColor);
@@ -36,7 +36,6 @@ const Firu = ({}) => {
 					<Meta
 						color={projColor}
 						id='firu-type'
-						left={metaLeft}
 					>
 						Editorial 2018
 					</Meta>
@@ -51,7 +50,6 @@ const Firu = ({}) => {
 
 					<Meta
 						color={projColor}
-						right={metaRight}
 						id='firu-desc'
 					>
 						Firu is a magazine about japanophilia
@@ -59,7 +57,6 @@ const Firu = ({}) => {
 					<Meta
 						color={projColor}
 						id='firu-client'
-						left={metaLeft}
 					>
 						Schoolwork
 					</Meta>
@@ -72,7 +69,7 @@ const Firu = ({}) => {
 							/>
 						</div>
 						<ProjectBodyText color={projColor}>
-							Firu is the result of a course in editorial design at Westerdals Oslo. I chose to create a
+							Firu is the result of a course in editorial design at Westerdals. I chose to create a
 							magazine about japanophilia, designing it inspired by japanese graphic design and culture.
 							<br></br>
 							<br></br>
@@ -107,6 +104,34 @@ const Firu = ({}) => {
 						id={styles.spread3}
 					/>
 				</Catchphrase>
+				<div className={styles.page48}>
+					<div className={styles.p48flex}>
+						<p>48</p>
+						<div className={styles.p48flexright}>
+							<p className={styles.p48firueng}>FIRU</p>
+							<p className={styles.p48firukat}>フィール</p>
+						</div>
+					</div>
+					<p className={styles.otaku}>私はオタクです！</p>
+				</div>
+				<div className={styles.spreadswrapper}>
+					<div className={styles.spreadwrapper} id={styles.sidewaysspread2}>
+						<Image
+							src={`${imgpath}/sidewaysspread.png`}
+							alt='FIRU magazine spread'
+							width={1386}
+							height={1040}
+						/>
+					</div>
+					<div className={styles.spreadwrapper}>
+						<Image
+							src={`${imgpath}/interspread2.png`}
+							alt='FIRU magazine spread'
+							width={1386}
+							height={1040}
+						/>
+					</div>
+				</div>
 			</ContentWrapper>
 		</div>
 	);

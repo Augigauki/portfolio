@@ -11,7 +11,7 @@ import { motion } from 'framer-motion';
 import Line from '@/components/Projects/UI/Line/Line';
 import Link from 'next/link';
 
-const page = ({}) => {
+const Page = ({}) => {
 	const color = 'var(--green)';
 	const { setLineColor, setBgColor, lineColor } = useColor();
 	setBgColor('rgb(255, 255, 255)');
@@ -25,34 +25,24 @@ const page = ({}) => {
 		>
 			<ContentWrapper>
 				<Line color={color} />
-				{/* <ProjectFlexWrapper>
-					<div className={styles.fleximgwrapper}>
-						<Image
-							src={'/assets/images/about/augusts.gif'}
-							alt='A gif with various images of August (me)'
-							fill={true}
-						/>
-					</div>
-					<ProjectBodyText color={lineColor}>
-						Hi, I'm August, a front-end developer based in Oslo. With a background in graphic design and IT, I bring a blend of creativity and technical expertise to every project I work on.
-					</ProjectBodyText>
-				</ProjectFlexWrapper> */}
+				
 				<div className={styles.aboutintro}>
 					<div className={styles.fleximgwrapper}>
 						<Image
 							src={'/assets/images/about/augusts.gif'}
 							alt='A gif with various images of August (me)'
 							fill={true}
+							unoptimized
 						/>
 					</div>
 					<ProjectBodyText color={lineColor}>
-						Hi, I'm August, a front-end developer based in Oslo. With a background in graphic design and IT,
+						Hi, I&apos;m August, a front-end developer based in Oslo. With a background in graphic design and programming,
 						I bring a blend of creativity and technical expertise to every project I work on.
 						<br></br>
-						<br></br>I have a bachelor's degree in{' '}
-						<span className={styles.em}>Informatics: Design, use and interaction</span> from{' '}
-						<span className={styles.strong}>the University of Oslo</span>, and a bachelor's degree in{' '}
-						<span className={styles.em}>Graphic design</span> from{' '}
+						<br></br>I have a bachelor&apos;s degree in{' '}
+						<span className={styles.em}>Informatics: Design, Use and Interaction</span> from{' '}
+						<span className={styles.strong}>the University of Oslo</span>. Addiotionally, I hold a bachelor&apos;s degree in{' '}
+						<span className={styles.em}>Graphic Design</span> from{' '}
 						<span className={styles.strong}>Høyskolen Kristiania</span>.<br></br>
 						<br></br>
 						Besides doing front-end at <Link href='https://intility.com/'>Intility</Link>, I enjoy{' '}
@@ -62,10 +52,10 @@ const page = ({}) => {
 						, doing some <Link href='https://www.instagram.com/augustgaukstad/'>hobby photography</Link>,
 						reading <Link href='https://www.goodreads.com/user/show/173980980-august-gaukstad'>books</Link>,
 						playing games, and watching{' '}
-						<Link href='https://letterboxd.com/augustgaukstad/'>movies/series</Link>.<br></br>
-						<br></br>I also do a lot of silly things like keep a note on my phone with silly sketch ideas,
-						create my own memes, develop <Link href={'https://hvilkendagerdet.no'}>small stupid sites</Link>{' '}
-						and more.
+						<Link href='https://letterboxd.com/augustgaukstad/'>movies/series</Link>.{/* <br></br>
+						<br></br>I also like to have fun with like keep a note on my phone with silly sketch ideas,
+						create my own memes, develop <Link href={'https://hvilkendagerdet.no'}>small quirky websites</Link>{' '}
+						and more. */}
 						<br></br>
 						<br></br>
 						If you want to stalk more you can check my{' '}
@@ -82,4 +72,4 @@ const page = ({}) => {
 	);
 };
 
-export default page;
+export default Page;

@@ -8,7 +8,7 @@
 }
 
 .aboutintro{
-    padding-top: 10rem;
+    padding-top: 6rem;
     display: grid;
     grid-template-columns: 1fr;
     gap: 4rem;
@@ -19,7 +19,7 @@
 
 .fleximgwrapper{
     position: relative;
-    width: 20%;
+    width: 20rem;
     aspect-ratio: 1 / 1;
     box-shadow: 0 0 0 12px white;
 }
@@ -30,7 +30,7 @@
 
 .aboutintro p{
     background-color: white;
-    max-width: 60ch;
+    max-width: 55ch;
     text-align: center;
     box-shadow: 0 0 0 12px white;
 }
@@ -41,4 +41,10 @@
 
 .strong{
     font-style: italic;
+}
+
+@media(max-width: 430px){
+    .fleximgwrapper{
+        width: 80vw;
+    }
 }

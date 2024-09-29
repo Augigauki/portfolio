@@ -25,3 +25,26 @@
     flex-basis: 50%;
     flex-grow: 1;
 }
+
+@media(max-width: 1054px){
+    .flex{
+        flex-direction: column;
+        background-color: white;
+        margin-bottom: 12rem;
+        padding: 2rem 0;
+    }
+
+    .flex.reversed{
+        flex-direction: column;
+    }
+
+    .fleximgwrapper{
+        flex-basis: unset;
+        width: 100%;
+        height: auto;
+    }
+
+    .flex p {
+        background-color: white;
+    }
+}

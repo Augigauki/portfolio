@@ -87,16 +87,26 @@
 
 #newtopoimg1{
     position: absolute;
-    top: -94%;
-    left: 5%;
+    top: -20vh;
+    left: clamp(32px, 5vw, 64px);
     z-index: 2;
 }
 
 #newtopoimg2{
     position: absolute;
-    bottom: -175%;
-    right: 0;
+    bottom: -30vh;
+    right: clamp(32px, 5vw, 64px);
     z-index: 2;
+}
+
+#canadacar{
+    width: clamp(300px, 23vw, 500px);
+    height: auto;
+}
+
+#intility{
+    width: clamp(300px, 28vw, 600px);
+    height: auto;
 }
 
 #dstressimg1{
@@ -114,13 +124,34 @@
     outline: 2px solid white;
 }
 
+#claustro{
+    width: clamp(300px, 25vw, 500px);
+    height: auto;
+}
+
+#metathesio{
+    width: clamp(300px, 25vw, 500px);
+    height: auto;
+}
+
 @media(max-width: 1440px){
     #firuspread{
         width: 40vw;
     }
 }
 
-@media(max-width: 868px){
+@media(max-width: 1280px){
+    #firudetail{
+        width: 30vw;
+    }
+}
+
+@media(max-width: 1054px){
+
+    #dstress{
+        height: unset;
+    }
+
 
     .outerwrapper{
         padding-top: 2rem;
@@ -129,8 +160,8 @@
     .projectcontainer{
         padding: 2rem 0;
         gap: 2rem;
+        padding-bottom: 12rem;
     }
-    
 
     #firuimg1{
         position: relative;
@@ -167,11 +198,51 @@
     #newtopoimg2{
         position: relative;
         bottom: 0;
-        left: 0;
+        right: 0;
         outline: 12px solid white;
+        margin-bottom: 1.75rem;
     }
 
+    #canadacar{
+        width: 66vw;
+    }
+
+    #intility{
+        width: 44vw;
+    }
+
+    #dstressimg1{
+        position: relative;
+        top: 0;
+        left: 0;
+        outline: 12px solid black;
+        margin-bottom: 1.75rem;
+        z-index: 2;
+    }
     
+    #dstressimg2{
+        position: relative;
+        bottom: 0;
+        right: 0;
+        z-index: 2;
+        outline: 12px solid black;
+        border: 2px solid white;
+    }
+    
+    #claustro{
+        width: 50vw;
+        height: auto;
+    }
+    
+    #metathesio{
+        width: 50vw;
+        height: auto;
+    }
+
+    #intility{
+        width: 75vw;
+        height: auto;
+    }
 }
 
 @media(min-width: 1920px){

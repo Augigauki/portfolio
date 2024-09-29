@@ -164,7 +164,7 @@ const Projects = () => {
 									width={324 * 1.5}
 									height={220 * 1.5}
 									className={styles.image}
-									id={styles.detail}
+									id={styles.intility}
 								/>
 								<Meta
 									color={newTopoColor}

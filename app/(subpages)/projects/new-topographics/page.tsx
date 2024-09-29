@@ -18,26 +18,21 @@ import Catchphrase from '@/components/Projects/UI/Catchphrase/Catchphrase';
 
 const NewTopo = ({}) => {
 	const clr = 'var(--winered)';
-	const metaLeft = '6rem';
-	const metaRight = '24rem';
 
 	const imgpath = '/assets/images/projects/newtopo/page/';
 
-	const { setLineColor, lineColor } = useColor();
+	const { setLineColor } = useColor();
 	setLineColor('rgb(113, 39, 58)');
 
 	return (
-		<div
-			style={{ paddingBottom: '10rem' }}
-			className={styles.newtopowrapper}
-		>
+		<div className={styles.newtopowrapper}>
 			<ContentWrapper>
 				<Line color={clr} />
 				<ProjectContentWrapper>
 					<div className={styles.heroimgwrapper}>
 						<HeroImageWrapper
-							src={`${imgpath}New-topo-hero.gif`}
-							alt={'Architecture photograph'}
+							src={`${imgpath}newtopogifblank.gif`}
+							alt={'architectural photo'}
 						/>
 					</div>
 					<Meta
@@ -61,13 +56,6 @@ const NewTopo = ({}) => {
 						New Topographics is an online photography museum
 					</Meta>
 					<ProjectFlexWrapper>
-						{/* <div className={styles.fleximgwrapper}>
-							<Image
-								src={italyman}
-								alt='Person walking up old italian city streets, parked cars at the side of the road and a wall with vines growing on it at the edge of the road. Old buildings in the background.'
-								fill={true}
-							/>
-						</div> */}
 						<div className={styles.flexvidwrapper}>
 							<video
 								src='/assets/images/projects/newtopo/page/newtopo-canada-vid.webm'
@@ -94,14 +82,14 @@ const NewTopo = ({}) => {
 			</ContentWrapper>
 			<LongLongImage
 				src={`${imgpath}3.jpg`}
-				alt={'tekst'}
+				alt={'architectural photo'}
 			/>
 			<ContentWrapper>
 				<ProjectContentWrapper>
 					<Catchphrase phrase={'Documenting the steady creep of suburban development'}>
 						<Image
 							src={`${imgpath}cp-2.jpg`}
-							alt='test'
+							alt='architectural photo'
 							width={3840 / 6}
 							height={2161 / 5}
 							className={styles.catchphraseimg}
@@ -109,7 +97,7 @@ const NewTopo = ({}) => {
 						/>
 						<Image
 							src={`${imgpath}cp-1.jpg`}
-							alt='test'
+							alt='architectural photo'
 							width={3840 / 6}
 							height={2161 / 5}
 							className={styles.catchphraseimg}
@@ -117,13 +105,6 @@ const NewTopo = ({}) => {
 						/>
 					</Catchphrase>
 					<ProjectFlexWrapper reverse={true}>
-						{/* <div className={styles.fleximgwrapper}>
-							<Image
-								src={`${imgpath}flex-2.jpg`}
-								alt='Person walking up old italian city streets, parked cars at the side of the road and a wall with vines growing on it at the edge of the road. Old buildings in the background.'
-								fill={true}
-							/>
-						</div> */}
 						<div className={styles.flexvidwrapper}>
 							<video
 								src='/assets/images/projects/newtopo/page/newtopo-august.webm'
@@ -151,7 +132,7 @@ const NewTopo = ({}) => {
 					>
 						<Image
 							src={`${imgpath}cp-3.jpg`}
-							alt='test'
+							alt='architectural photo'
 							width={3072 / 6}
 							height={4080 / 5}
 							className={styles.catchphraseimg}
@@ -159,7 +140,7 @@ const NewTopo = ({}) => {
 						/>
 						<Image
 							src={`${imgpath}cp-4.jpg`}
-							alt='test'
+							alt='architectural photo'
 							width={2000 / 3}
 							height={1355 / 3}
 							className={styles.catchphraseimg}

@@ -34,7 +34,7 @@
 }
 
 #img1{
-    width: 33vw;
+    width: clamp(300px, 33vw, 600px);
     height: auto;
     left: 0;
     top: 0;
@@ -42,7 +42,7 @@
 }
 
 #img2{
-    width: 33vw;
+    width: clamp(300px, 33vw, 600px);
     height: auto;
     right: 0;
     bottom: 0;
@@ -50,7 +50,7 @@
 }
 
 #img3{
-    width: 25vw;
+    width: clamp(400px, 25vw, 550px);
     height: auto;
     right: 0;
     bottom: 0;
@@ -58,9 +58,34 @@
 }
 
 #img4{
-    width: 30vw;
+    width: clamp(300px, 30vw, 600px);
     height: auto;
     top: 0;
     left: 0;
     opacity: 0.7;
+}
+
+@media(max-width: 767px){
+    #img1, #img2, #img4{
+        position: absolute;
+        z-index: 2;
+        left: 50%;
+        transform: translate(-50%);
+        background-color: white;
+        box-shadow: 0 0 0 12px white;
+        opacity: 1;
+        width: 65vw;
+    }
+
+    #img3{
+        position: absolute;
+        z-index: 2;
+        left: 50%;
+        transform: translate(-50%);
+        background-color: white;
+        box-shadow: 0 0 0 12px white;
+        opacity: 1;
+        width: 30vw;
+    }
+
 }

@@ -72,7 +72,22 @@
         font-size: calc(24rem/16);
     }
 
+    
+
     .header, .footer{
         padding: calc(30rem/16) calc(20rem/16)
+    }
+}
+
+@media(max-width: 500px){
+    .header, .footer{
+        padding: calc(24rem/16) calc(8rem/16)
+    }
+    .title{
+        font-size: 6vw;
+    }
+
+    .navlink{
+        font-size: 3vw;
     }
 }

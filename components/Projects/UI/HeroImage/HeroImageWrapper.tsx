@@ -13,13 +13,15 @@ const HeroImageWrapper = ({src, alt}: HeroImgProps) => {
 
 	const {bgColor} = useColor();
 
+	let gif = src.endsWith('.gif');
+
 	return (
 		<div className={styles.heroimgwrapper} style={{boxShadow: `0 0 0 30px ${bgColor}`}}>
 			<Image
 				src={src}
 				alt={alt}
 				fill={true}
-				unoptimized
+				unoptimized={gif}
 			/>
 		</div>
 	);

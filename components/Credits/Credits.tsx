@@ -97,7 +97,7 @@ const Credits = ({}) => {
 									/>
 									<Contributor
 										name={'My Spotify Playlists'}
-										role={'Psychiatrist'}
+										role={'Mental Health Assistant'}
 									/>
 								</div>
 								<div className={styles.creditsgroup}>
@@ -117,7 +117,7 @@ const Credits = ({}) => {
 									</p>
 									<Contributor
 										name={'hoverstat.es'}
-										role={'Website'}
+										role={'Websites'}
 									/>
 									<p className={styles.h3}>
 										<StyledText text={'Fonts'} />

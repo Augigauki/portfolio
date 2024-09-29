@@ -24,12 +24,18 @@
     }
 }
 
-@media(max-width: 868px){
+@media(max-width: 1054px){
     .contentwrapper{
         padding: 0 calc(20rem/16);
     }
 
     .projectcontentwrapper{
         gap: 4rem;
+    }
+}
+
+@media(max-width: 500px){
+    .contentwrapper{
+        padding: 0 calc(8rem/16);
     }
 }

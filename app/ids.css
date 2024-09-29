@@ -8,57 +8,65 @@
 }
 
 #pp-newtopo-descriptor {
-	top: 40rem;
+	top: 30vh;
+	left: 0;
 }
 
-#pp-newtopo-category{
-    left: 51%;
-    top: -55rem;
+#pp-newtopo-category {
+	left: 51%;
+	top: -55vh;
 }
 
-#pp-dstress-descriptor{
-    left: 12rem;
+#pp-dstress-descriptor {
+	left: 12rem;
 }
 
-#pp-dstress-type{
-    left: -8rem;
+#pp-dstress-type {
+	left: -8rem;
 }
 
 /*? FIRU */
 
-#firu-type{
-    left: 6rem;
+#firu-type {
+	left: 6rem;
 }
 
-#firu-desc{
-    right: 18rem
+#firu-desc {
+	right: 18rem;
 }
 
-#firu-client{
-    left: 6rem;
+#firu-client {
+	left: 6rem;
 }
 
 /*! NEW TOPO PAGE */
 
-#newtopo-type{
-    left: 6rem;
+#newtopo-type {
+	left: 6rem;
 }
 
-#newtopo-desc{
-    right: 12rem;
+#newtopo-desc {
+	right: 12rem;
 }
 
 /*? DSTRESS PAGE */
 
-#dstress-type{
-    left: 10rem;
+#dstress-type {
+	left: 10rem;
 }
 
-#dstress-desc{
-    right: 10rem;
+#dstress-desc {
+	right: 10rem;
 }
 
-@media (max-width: 868px) {
+@media (max-width: 1280px) {
+	#pp-firu-category,
+	#pp-firu-client {
+		left: 7%;
+	}
+}
+
+@media (max-width: 1054px) {
 	#pp-firu-category {
 		left: 4rem;
 	}
@@ -76,7 +84,117 @@
 		position: absolute;
 		left: 0;
 		top: 100%;
-        padding-top: 0.75rem;
-        max-width: 26ch;
+		padding-top: 0.75rem;
+		max-width: 26ch;
+	}
+
+	#pp-newtopo-category {
+		position: absolute;
+		left: 100%;
+		transform: translate(-100%);
+		text-align: right;
+		top: 110%;
+		max-width: 15ch;
+	}
+
+}
+
+@media(max-width: 868px){
+    #firu-type {
+		left: 4rem;
+	}
+	
+	#firu-desc {
+		right: 8rem;
+	}
+	
+	#firu-client {
+		left: 4rem;
+	}
+}
+
+@media (max-width: 767px) {
+	#pp-firu-descriptor {
+		bottom: -6rem;
+		left: -8vw;
+	}
+
+	#pp-newtopo-descriptor {
+		left: -10vw;
+		top: 110%;
+		max-width: 20ch;
+	}
+
+	#newtopo-type {
+		left: 4rem;
+	}
+	
+	#newtopo-desc {
+		right: 9rem;
+	}
+}
+
+@media (max-width: 600px) {
+	#pp-newtopo-descriptor {
+		max-width: 15ch;
+	}
+
+	#pp-newtopo-category {
+		left: 100%;
+		transform: translate(-100%);
+		text-align: right;
+		top: 110%;
+		max-width: 15ch;
+	}
+
+	#pp-dstress-descriptor {
+		left: 7rem;
+		max-width: 20ch;
+	}
+
+	#newtopo-type {
+		left: 4rem;
+	}
+	
+	#newtopo-desc {
+		right: 7rem;
+		max-width: 20ch;
+	}
+}
+
+@media(max-width: 590px){
+    #firu-type {
+		left: 4rem;
+	}
+	
+	#firu-desc {
+		right: 6rem;
+	}
+	
+	#firu-client {
+		left: 4rem;
+	}
+
+	#dstress-type {
+		left: 6rem;
+	}
+	
+	#dstress-desc {
+		right: 5rem;
+		max-width: 10ch;
+	}
+}
+
+@media(max-width: 500px){
+	#pp-newtopo-category {
+		left: 100%;
+		transform: translate(-100%);
+		text-align: right;
+		top: 110%;
+		max-width: 15ch;
+	}
+
+	#pp-firu-descriptor{
+		max-width: 50%;
 	}
 }

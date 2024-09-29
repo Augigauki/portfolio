@@ -63,7 +63,7 @@ body {
 	position: relative;
 	background-color: var(--white);
 	color: var(--black);
-	overscroll-behavior-y: none;
+	overscroll-behavior: none;
 }
 
 .wrapper {

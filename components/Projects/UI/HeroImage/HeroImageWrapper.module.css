@@ -9,3 +9,15 @@
 .heroimgwrapper img{
     object-fit: cover;
 }
+
+@media(max-width: 1440px){
+    .heroimgwrapper{
+        height: 60vh;
+    }
+}
+
+@media(max-width: 600px){
+    .heroimgwrapper{
+        height: 40vh;
+    }
+}

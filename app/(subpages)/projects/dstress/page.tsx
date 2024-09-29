@@ -17,13 +17,26 @@ import metathesio from '@/components/Dstress/Sketches/Metathesio';
 import thalasso from '@/components/Dstress/Sketches/Thalasso';
 import trypo from '@/components/Dstress/Sketches/Trypo';
 import StyledText from '@/components/UI/StyledText';
+import { useEffect, useState } from 'react';
 
 const P5wrapper = dynamic(() => import('@/components/p5wrapper/P5wrapper'), { ssr: false });
 
 const Dstress = ({}) => {
 	const color = 'var(--white)';
-	const metaLeft = '10rem';
-	const metaRight = '24rem';
+
+	const [windowWidth, setWindowWidth] = useState(0);
+
+	useEffect(() => {
+		setWindowWidth(window.innerWidth);
+
+		const handleResize = () => {
+			setWindowWidth(window.innerWidth);
+		};
+
+		window.addEventListener('resize', handleResize);
+
+		return () => window.removeEventListener('resize', handleResize);
+	}, []);
 
 	const { setLineColor, setBgColor, bgColor, lineColor } = useColor();
 
@@ -39,13 +52,12 @@ const Dstress = ({}) => {
 				<Line color={color} />
 				<ProjectContentWrapper>
 					<HeroImageWrapper
-						src={'/assets/images/projects/dstress/mock.jpg'}
+						src={'/assets/images/projects/dstress/page/dstresshero.jpg'}
 						alt={'mock'}
 					/>
 					<Meta
 						color={color}
 						id='dstress-type'
-						left={metaLeft}
 					>
 						Schoolwork 2020
 					</Meta>
@@ -60,7 +72,6 @@ const Dstress = ({}) => {
 					<Meta
 						color={lineColor}
 						id='dstress-desc'
-						right={'10rem'}
 					>
 						Interactive artworks
 					</Meta>
@@ -87,9 +98,26 @@ const Dstress = ({}) => {
 							</div>
 						</div>
 						<div className={styles.centered}>
-							<div className={styles.sketchwrapper}>
-								<P5wrapper sketch={claustro} />
-							</div>
+							{windowWidth > 1440 ? (
+								<div className={styles.sketchwrapper}>
+									<P5wrapper sketch={claustro} />
+								</div>
+							) : (
+								<div className={styles.videowrapper}>
+									<video
+										src='/assets/images/projects/dstress/page/Claustro.webm'
+										autoPlay
+										muted
+										loop
+										controls={false}
+										className={styles.video}
+									>
+
+									</video>
+									<p className={styles.disclaimer}>Interactive version on desktop above 1440px only, sorry!</p>
+								</div>
+							)}
+
 							<div className={styles.playlist}>
 								<Spotify
 									link={
@@ -118,9 +146,25 @@ const Dstress = ({}) => {
 							</div>
 						</div>
 						<div className={styles.centered}>
-							<div className={styles.sketchwrapper}>
-								<P5wrapper sketch={metathesio} />
-							</div>
+						{windowWidth > 1440 ? (
+								<div className={styles.sketchwrapper}>
+									<P5wrapper sketch={metathesio} />
+								</div>
+							) : (
+								<div className={styles.videowrapper}>
+									<video
+										src='/assets/images/projects/dstress/page/Metathesio.webm'
+										autoPlay
+										muted
+										loop
+										controls={false}
+										className={styles.video}
+									>
+
+									</video>
+									<p className={styles.disclaimer}>Interactive version on desktop above 1440px only, sorry!</p>
+								</div>
+							)}
 							<div className={styles.playlist}>
 								<Spotify
 									link={
@@ -134,9 +178,6 @@ const Dstress = ({}) => {
 						<p className={styles.intermission}>
 							<StyledText text={'Interactive album artworks that might be mildly triggering.'} />
 						</p>
-						{/* <p className={styles.intermission}>
-							Interactive album artworks that might be mildly triggering.
-						</p> */}
 					</div>
 					{/* Thalasso */}
 					<div className={styles.phobwrapper}>
@@ -159,9 +200,25 @@ const Dstress = ({}) => {
 							</div>
 						</div>
 						<div className={styles.centered}>
-							<div className={styles.sketchwrapper}>
-								<P5wrapper sketch={thalasso} />
-							</div>
+						{windowWidth > 1440 ? (
+								<div className={styles.sketchwrapper}>
+									<P5wrapper sketch={thalasso} />
+								</div>
+							) : (
+								<div className={styles.videowrapper}>
+									<video
+										src='/assets/images/projects/dstress/page/Thalasso.webm'
+										autoPlay
+										muted
+										loop
+										controls={false}
+										className={styles.video}
+									>
+
+									</video>
+									<p className={styles.disclaimer}>Interactive version on desktop above 1440px only, sorry!</p>
+								</div>
+							)}
 							<div className={styles.playlist}>
 								<Spotify
 									link={
@@ -191,9 +248,25 @@ const Dstress = ({}) => {
 							</div>
 						</div>
 						<div className={styles.centered}>
-							<div className={styles.sketchwrapper}>
-								<P5wrapper sketch={trypo} />
-							</div>
+						{windowWidth > 1440 ? (
+								<div className={styles.sketchwrapper}>
+									<P5wrapper sketch={trypo} />
+								</div>
+							) : (
+								<div className={styles.videowrapper}>
+									<video
+										src='/assets/images/projects/dstress/page/Trypo.webm'
+										autoPlay
+										muted
+										loop
+										controls={false}
+										className={styles.video}
+									>
+
+									</video>
+									<p className={styles.disclaimer}>Interactive version on desktop above 1440px only, sorry!</p>
+								</div>
+							)}
 							<div className={styles.playlist}>
 								<Spotify
 									link={

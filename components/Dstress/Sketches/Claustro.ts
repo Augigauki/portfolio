@@ -5,7 +5,7 @@ let frames: Walls[] = [];
 let font: p5.Font;
 let mouseIn = false;
 let br: Brush;
-const mob = 768;
+const mob = 2;
 
 interface Bounds {
 	x: number;
