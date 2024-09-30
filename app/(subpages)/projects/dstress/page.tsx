@@ -105,16 +105,24 @@ const Dstress = ({}) => {
 							) : (
 								<div className={styles.videowrapper}>
 									<video
-										src='/assets/images/projects/dstress/page/Claustro.webm'
 										autoPlay
 										muted
 										loop
-										controls={false}
 										className={styles.video}
+										poster='/assets/images/projects/dstress/page/CLAUSTRO.jpg'
 									>
-
+										<source
+											src='/assets/images/projects/dstress/page/Claustro.webm'
+											type='video/webm'
+										/>
+										<source
+											src='/assets/images/projects/dstress/page/claustro.mp4'
+											type='video/mp4'
+										/>
 									</video>
-									<p className={styles.disclaimer}>Interactive version on desktop above 1440px only, sorry!</p>
+									<p className={styles.disclaimer}>
+										Interactive version on desktop above 1440px only, sorry!
+									</p>
 								</div>
 							)}
 
@@ -146,23 +154,31 @@ const Dstress = ({}) => {
 							</div>
 						</div>
 						<div className={styles.centered}>
-						{windowWidth > 1440 ? (
+							{windowWidth > 1440 ? (
 								<div className={styles.sketchwrapper}>
 									<P5wrapper sketch={metathesio} />
 								</div>
 							) : (
 								<div className={styles.videowrapper}>
 									<video
-										src='/assets/images/projects/dstress/page/Metathesio.webm'
 										autoPlay
 										muted
 										loop
-										controls={false}
 										className={styles.video}
+										poster='/assets/images/projects/dstress/page/meta-capture.png'
 									>
-
+										<source
+											src='/assets/images/projects/dstress/page/Metathesio.webm'
+											type='video/webm'
+										/>
+										<source
+											src='/assets/images/projects/dstress/page/metathesio.mp4'
+											type='video/mp4'
+										/>
 									</video>
-									<p className={styles.disclaimer}>Interactive version on desktop above 1440px only, sorry!</p>
+									<p className={styles.disclaimer}>
+										Interactive version on desktop above 1440px only, sorry!
+									</p>
 								</div>
 							)}
 							<div className={styles.playlist}>
@@ -200,23 +216,31 @@ const Dstress = ({}) => {
 							</div>
 						</div>
 						<div className={styles.centered}>
-						{windowWidth > 1440 ? (
+							{windowWidth > 1440 ? (
 								<div className={styles.sketchwrapper}>
 									<P5wrapper sketch={thalasso} />
 								</div>
 							) : (
 								<div className={styles.videowrapper}>
 									<video
-										src='/assets/images/projects/dstress/page/Thalasso.webm'
 										autoPlay
 										muted
 										loop
-										controls={false}
 										className={styles.video}
+										poster='/assets/images/projects/dstress/page/thalasso-capture.png'
 									>
-
+										<source
+											src='/assets/images/projects/dstress/page/Thalasso.webm'
+											type='video/webm'
+										/>
+										<source
+											src='/assets/images/projects/dstress/page/thalasso.mp4'
+											type='video/mp4'
+										/>
 									</video>
-									<p className={styles.disclaimer}>Interactive version on desktop above 1440px only, sorry!</p>
+									<p className={styles.disclaimer}>
+										Interactive version on desktop above 1440px only, sorry!
+									</p>
 								</div>
 							)}
 							<div className={styles.playlist}>
@@ -248,23 +272,31 @@ const Dstress = ({}) => {
 							</div>
 						</div>
 						<div className={styles.centered}>
-						{windowWidth > 1440 ? (
+							{windowWidth > 1440 ? (
 								<div className={styles.sketchwrapper}>
 									<P5wrapper sketch={trypo} />
 								</div>
 							) : (
 								<div className={styles.videowrapper}>
 									<video
-										src='/assets/images/projects/dstress/page/Trypo.webm'
 										autoPlay
 										muted
 										loop
-										controls={false}
 										className={styles.video}
+										poster='/assets/images/projects/dstress/page/trypo-capture.png'
 									>
-
+										<source
+											src='/assets/images/projects/dstress/page/Trypo.webm'
+											type='video/webm'
+										/>
+										<source
+											src='/assets/images/projects/dstress/page/trypo.mp4'
+											type='video/mp4'
+										/>
 									</video>
-									<p className={styles.disclaimer}>Interactive version on desktop above 1440px only, sorry!</p>
+									<p className={styles.disclaimer}>
+										Interactive version on desktop above 1440px only, sorry!
+									</p>
 								</div>
 							)}
 							<div className={styles.playlist}>

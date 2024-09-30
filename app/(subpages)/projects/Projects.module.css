@@ -1,252 +1,235 @@
-.outerwrapper{
-    position: relative;
-    width: 100%;
-    padding-top: 10rem;
+.outerwrapper {
+	position: relative;
+	width: 100%;
+	padding-top: 10rem;
 }
 
-.line{
-    position: fixed;
-    left: 50%;
-    top: 0;
-    transform: translateX(-50%);
-    height: 100vh;
-    width: 2px;
-    z-index: 1;
+.line {
+	position: fixed;
+	left: 50%;
+	top: 0;
+	transform: translateX(-50%);
+	height: 100vh;
+	width: 2px;
+	z-index: 1;
 }
 
-.projectcontainer{
-    position: relative;
-    width: 100%;
-    padding: 20vh 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 10rem;
+.projectcontainer {
+	position: relative;
+	width: 100%;
+	padding: 20vh 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	gap: 10rem;
 }
 
-.title{
-    font-family: 'Editorial Old';
-    font-weight: 200;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: calc(110em/16);
-    z-index: 20;
-    user-select: none;
+.projectlink {
+	text-decoration: none;
+	color: inherit;
+	position: relative;
 }
 
-.titlebg{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    height: 100%;
-    transform: translate(-50%, -50%);
-    background-color: var(--white);
-    z-index: 1;
+.projectlink h2{
+    transition: font-variation-settings 0.3s ease-in-out;
 }
 
-.projectlink{
-    text-decoration: none;
-    color: inherit;
-    position: relative;
+.projectlink h2:hover{
+    font-variation-settings: 'wght' 250;
 }
 
-#dstress{
-    height: 100dvh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#dstress {
+	height: 100dvh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-#firuimg1{
-    position: absolute;
-    top: -80%;
-    left: 0%;
-    z-index: 2;
+#firuimg1 {
+	position: absolute;
+	top: -80%;
+	left: 0%;
+	z-index: 2;
 }
 
-#firuimg2{
-    position: absolute;
-    bottom: -15%;
-    right: 0;
-    z-index: 2;
+#firuimg2 {
+	position: absolute;
+	bottom: -15%;
+	right: 0;
+	z-index: 2;
 }
 
-#firuspread{
-    width: 44vw;
-    height: auto;
+#firuspread {
+	width: 44vw;
+	height: auto;
 }
 
-#firudetail{
-    width: clamp(300px, 33vw, 542px);
-    height: auto;
+#firudetail {
+	width: clamp(300px, 33vw, 542px);
+	height: auto;
 }
 
-#newtopoimg1{
-    position: absolute;
-    top: -20vh;
-    left: clamp(32px, 5vw, 64px);
-    z-index: 2;
+#newtopoimg1 {
+	position: absolute;
+	top: -20vh;
+	left: clamp(32px, 5vw, 64px);
+	z-index: 2;
 }
 
-#newtopoimg2{
-    position: absolute;
-    bottom: -30vh;
-    right: clamp(32px, 5vw, 64px);
-    z-index: 2;
+#newtopoimg2 {
+	position: absolute;
+	bottom: -30vh;
+	right: clamp(32px, 5vw, 64px);
+	z-index: 2;
 }
 
-#canadacar{
-    width: clamp(300px, 23vw, 500px);
-    height: auto;
+#canadacar {
+	width: clamp(300px, 23vw, 500px);
+	height: auto;
 }
 
-#intility{
-    width: clamp(300px, 28vw, 600px);
-    height: auto;
+#intility {
+	width: clamp(300px, 28vw, 600px);
+	height: auto;
 }
 
-#dstressimg1{
-    position: absolute;
-    top: -7%;
-    left: 0%;
-    z-index: 2;
+#dstressimg1 {
+	position: absolute;
+	top: -7%;
+	left: 0%;
+	z-index: 2;
 }
 
-#dstressimg2{
-    position: absolute;
-    bottom: -17%;
-    right: 0;
-    z-index: 2;
-    outline: 2px solid white;
+#dstressimg2 {
+	position: absolute;
+	bottom: -17%;
+	right: 0;
+	z-index: 2;
+	outline: 2px solid white;
 }
 
-#claustro{
-    width: clamp(300px, 25vw, 500px);
-    height: auto;
+#claustro {
+	width: clamp(300px, 25vw, 500px);
+	height: auto;
 }
 
-#metathesio{
-    width: clamp(300px, 25vw, 500px);
-    height: auto;
+#metathesio {
+	width: clamp(300px, 25vw, 500px);
+	height: auto;
 }
 
-@media(max-width: 1440px){
-    #firuspread{
-        width: 40vw;
-    }
+@media (max-width: 1440px) {
+	#firuspread {
+		width: 40vw;
+	}
 }
 
-@media(max-width: 1280px){
-    #firudetail{
-        width: 30vw;
-    }
+@media (max-width: 1280px) {
+	#firudetail {
+		width: 30vw;
+	}
 }
 
-@media(max-width: 1054px){
+@media (max-width: 1054px) {
+	#dstress {
+		height: unset;
+	}
 
-    #dstress{
-        height: unset;
-    }
+	.outerwrapper {
+		padding-top: 2rem;
+	}
 
+	.projectcontainer {
+		padding: 2rem 0;
+		gap: 2rem;
+		padding-bottom: 12rem;
+	}
 
-    .outerwrapper{
-        padding-top: 2rem;
-    }
+	#firuimg1 {
+		position: relative;
+		top: 0;
+		outline: 12px solid white;
+		display: inline-flex;
+		flex-direction: column;
+		margin-bottom: 4rem;
+	}
 
-    .projectcontainer{
-        padding: 2rem 0;
-        gap: 2rem;
-        padding-bottom: 12rem;
-    }
+	#firuimg2 {
+		position: relative;
+		left: 0;
+		bottom: 0;
+		outline: 12px solid white;
+	}
 
-    #firuimg1{
-        position: relative;
-        top: 0;
-        outline: 12px solid white;
-        display: inline-flex;
-        flex-direction: column;
-        margin-bottom: 4rem;
-    }
+	#firuspread {
+		width: 66vw;
+	}
 
-    #firuimg2{
-        position: relative;
-        left: 0;
-        bottom: 0;
-        outline: 12px solid white;
-    }
+	#firudetail {
+		width: 44vw;
+	}
 
-    #firuspread{
-        width: 66vw;
-    }
+	#newtopoimg1 {
+		position: relative;
+		top: 0;
+		left: 0;
+		outline: 12px solid white;
+		margin-bottom: 1.75rem;
+	}
 
-    #firudetail{
-        width: 44vw;
-    }
+	#newtopoimg2 {
+		position: relative;
+		bottom: 0;
+		right: 0;
+		outline: 12px solid white;
+		margin-bottom: 1.75rem;
+	}
 
-    #newtopoimg1{
-        position: relative;
-        top: 0;
-        left: 0;
-        outline: 12px solid white;
-        margin-bottom: 1.75rem;
-    }
+	#canadacar {
+		width: 66vw;
+	}
 
-    #newtopoimg2{
-        position: relative;
-        bottom: 0;
-        right: 0;
-        outline: 12px solid white;
-        margin-bottom: 1.75rem;
-    }
+	#intility {
+		width: 44vw;
+	}
 
-    #canadacar{
-        width: 66vw;
-    }
+	#dstressimg1 {
+		position: relative;
+		top: 0;
+		left: 0;
+		outline: 12px solid black;
+		margin-bottom: 1.75rem;
+		z-index: 2;
+	}
 
-    #intility{
-        width: 44vw;
-    }
+	#dstressimg2 {
+		position: relative;
+		bottom: 0;
+		right: 0;
+		z-index: 2;
+		outline: 12px solid black;
+		border: 2px solid white;
+	}
 
-    #dstressimg1{
-        position: relative;
-        top: 0;
-        left: 0;
-        outline: 12px solid black;
-        margin-bottom: 1.75rem;
-        z-index: 2;
-    }
-    
-    #dstressimg2{
-        position: relative;
-        bottom: 0;
-        right: 0;
-        z-index: 2;
-        outline: 12px solid black;
-        border: 2px solid white;
-    }
-    
-    #claustro{
-        width: 50vw;
-        height: auto;
-    }
-    
-    #metathesio{
-        width: 50vw;
-        height: auto;
-    }
+	#claustro {
+		width: 50vw;
+		height: auto;
+	}
 
-    #intility{
-        width: 75vw;
-        height: auto;
-    }
+	#metathesio {
+		width: 50vw;
+		height: auto;
+	}
+
+	#intility {
+		width: 75vw;
+		height: auto;
+	}
 }
 
-@media(min-width: 1920px){
-    #firuspread{
-        width: 832px;
-    }
+@media (min-width: 1920px) {
+	#firuspread {
+		width: 832px;
+	}
 }

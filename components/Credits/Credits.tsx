@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import styles from './Credits.module.css';
 import { motion } from 'framer-motion';
 import Contributor from './Contributor';
@@ -9,7 +9,52 @@ import { useColor } from '@/context/ColorContext';
 
 const Credits = ({}) => {
 	const [showCredits, setShowCredits] = useState(false);
+	const [duration, setDuration] = useState(60);
 	const { lineColor } = useColor();
+
+	useEffect(() => {
+		const calculateDuration = () => {
+			if (typeof window !== 'undefined') {
+				const width = window.innerWidth;
+
+				if (width < 600) {
+					// Mobile view
+					return 90;
+				} else if (width < 1200) {
+					return 75;
+				} else {
+					// Desktop view
+					return 60;
+				}
+			}
+			return 60;
+		};
+
+		setDuration(calculateDuration());
+
+		const handleResize = () => {
+			setDuration(calculateDuration());
+		};
+
+		window.addEventListener('resize', handleResize);
+		return () => {
+			window.removeEventListener('resize', handleResize);
+		};
+	}, []);
+
+	useEffect(() => {
+        // Function to close credits on 'Escape' key press
+        const handleKeyDown = (event: KeyboardEvent) => {
+            if (event.key === 'Escape') {
+                setShowCredits(false);
+            }
+        };
+
+        window.addEventListener('keydown', handleKeyDown);
+        return () => {
+            window.removeEventListener('keydown', handleKeyDown);
+        };
+    }, []);
 
 	const handleShow = () => {
 		setShowCredits(true);
@@ -27,8 +72,8 @@ const Credits = ({}) => {
 	const creditsVariants = {
 		hidden: { y: '100%' },
 		visible: {
-			y: '-100vh',
-			transition: { duration: 60, ease: 'linear' },
+			y: '-100%',
+			transition: { duration: duration, ease: 'linear' },
 		},
 	};
 
@@ -55,7 +100,30 @@ const Credits = ({}) => {
 							className={styles.close}
 							onClick={handleHide}
 						>
-							X
+							<svg
+								xmlns='http://www.w3.org/2000/svg'
+								width='24'
+								height='24'
+								viewBox='0 0 24 24'
+								fill='none'
+								stroke='currentColor'
+								strokeWidth='2'
+								strokeLinecap='round'
+								strokeLinejoin='round'
+							>
+								<line
+									x1='18'
+									y1='6'
+									x2='6'
+									y2='18'
+								/>
+								<line
+									x1='6'
+									y1='6'
+									x2='18'
+									y2='18'
+								/>
+							</svg>
 						</p>
 						<motion.div
 							variants={creditsVariants}
@@ -75,29 +143,43 @@ const Credits = ({}) => {
 										<StyledText text={'Core team'} />
 									</p>
 									<Contributor
-										name={'August Gaukstad'}
-										role={'Director'}
-									/>
-									<Contributor
-										name={'August Gaukstad'}
-										role={'Producer'}
-									/>
-									<Contributor
+										role={'Visual Director'}
 										name={'Solveig Hisdal'}
-										role={'Creative Director'}
+									/>
+									<Contributor
+										role={'Developer'}
+										name={'August Gaukstad'}
 									/>
 
 									<Contributor
-										name={'August Gaukstad'}
-										role={'Lead Developer'}
-									/>
-									<Contributor
-										name={'ChatGPT'}
 										role={'Assistant Developer'}
+										name={'ChatGPT'}
 									/>
 									<Contributor
+										role={'Sanity'}
 										name={'My Spotify Playlists'}
-										role={'Mental Health Assistant'}
+									/>
+								</div>
+								<div className={styles.creditsgroup}>
+									<p className={styles.h2}>
+										<StyledText text={'Development'} />
+									</p>
+									<Contributor
+										role={'Framework'}
+										name={'NextJS'}
+									/>
+									<Contributor
+										role={'Hosting'}
+										name={'Digital Ocean'}
+									/>
+
+									<Contributor
+										role={'Deployment tool'}
+										name={'Coolify'}
+									/>
+									<Contributor
+										role={'Code Editor'}
+										name={'VS Code'}
 									/>
 								</div>
 								<div className={styles.creditsgroup}>
@@ -105,74 +187,95 @@ const Credits = ({}) => {
 										<StyledText text={'Design'} />
 									</p>
 									<Contributor
-										name={'Solveig Hisdal'}
 										role={'Lead Designer'}
+										name={'Solveig Hisdal'}
 									/>
 									<Contributor
-										name={'August Gaukstad'}
 										role={'Designer'}
+										name={'August Gaukstad'}
 									/>
+
 									<p className={styles.h3}>
 										<StyledText text={'Inspiration'} />
 									</p>
 									<Contributor
-										name={'hoverstat.es'}
 										role={'Websites'}
+										name={'hoverstat.es'}
 									/>
 									<p className={styles.h3}>
 										<StyledText text={'Fonts'} />
 									</p>
 									<Contributor
-										name={'Editorial Old'}
 										role={'Headings'}
+										name={'Editorial Old'}
 									/>
 									<Contributor
-										name={'Neue Montreal'}
 										role={'Body text'}
+										name={'Neue Montreal'}
+									/>
+									<Contributor
+										role={'Foundry'}
+										name={'Pangram Pangram'}
 									/>
 									<p className={styles.h3}>
 										<StyledText text={'Colors'} />
 									</p>
 									<Contributor
-										name={'#05429B'}
 										role={'Blue'}
+										name={'#05429B'}
 									/>
 									<Contributor
-										name={'#988870'}
 										role={'Beige'}
+										name={'#988870'}
 									/>
 									<Contributor
-										name={'#71273A'}
 										role={'Wine red'}
+										name={'#71273A'}
 									/>
 									<Contributor
-										name={'#666135'}
 										role={'Green'}
+										name={'#666135'}
 									/>
 									<Contributor
-										name={'#FFFFFF'}
 										role={'White'}
+										name={'#FFFFFF'}
 									/>
 									<Contributor
-										name={'#000000'}
 										role={'Black'}
+										name={'#000000'}
 									/>
 								</div>
 								<div className={styles.creditsgroup}>
 									<p className={styles.h2}>
-										<StyledText text={'Local heroes'} />
+										<StyledText text={'Catering'} />
 									</p>
 									<Contributor
+										role={'Dinners'}
 										name={'Sun Sushi Torshov'}
-										role={'Sustenance'}
 									/>
 									<Contributor
+										role={'Dinners'}
 										name={'Apsorn Thai Torshov'}
-										role={'Sustenance'}
 									/>
 									<Contributor
+										role={'Snacks'}
 										name={'Sørlandschips'}
-										role={'Sustenance'}
+									/>
+									<Contributor
+										role={'Snacks'}
+										name={'Gifflar'}
+									/>
+									<Contributor
+										role={'Snacks'}
+										name={'Smash'}
+									/>
+									<Contributor
+										role={'Drinks'}
+										name={'Farris Frus'}
+									/>
+									<Contributor
+										role={'Drinks'}
+										name={'Beer'}
 									/>
 								</div>
 								<div className={styles.creditsgroup}>
@@ -180,17 +283,31 @@ const Credits = ({}) => {
 										<StyledText text={'Special thanks'} />
 									</p>
 									<Contributor
+										role={'For all your time'}
 										name={'Solveig Hisdal'}
-										role={'Brainstormer'}
 									/>
 									<Contributor
+										role={'For companionship and ideas'}
 										name={'Espen Jensvold'}
-										role={'Brainstormer'}
 									/>
 									<Contributor
+										role={'For presence on Discord'}
 										name={'Håvar Fagerheim'}
-										role={'Discord Companion'}
 									/>
+									<Contributor
+										role={'For presence on Discord'}
+										name={'Sebastian Mangseth'}
+									/>
+									<Contributor
+										role={'For unconditional love and support'}
+										name={'My mom'}
+									/>
+									<div style={{ paddingTop: '2rem' }}>
+										<Contributor
+											role={'For visiting my site'}
+											name={'You!'}
+										/>
+									</div>
 								</div>
 							</div>
 						</motion.div>

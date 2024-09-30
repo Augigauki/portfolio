@@ -62,7 +62,6 @@ const NewTopo = ({}) => {
 								autoPlay
 								muted
 								loop
-								controls={false}
 							></video>
 						</div>
 						<ProjectBodyText color={clr}>
@@ -111,7 +110,6 @@ const NewTopo = ({}) => {
 								autoPlay
 								muted
 								loop
-								controls={false}
 							></video>
 						</div>
 						<ProjectBodyText color={clr}>

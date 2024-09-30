@@ -1,4 +1,6 @@
-
+.aboutpage{
+    padding: 6rem 0;
+}
 
 .h1{
     display: flex;
@@ -8,7 +10,6 @@
 }
 
 .aboutintro{
-    padding-top: 6rem;
     display: grid;
     grid-template-columns: 1fr;
     gap: 4rem;

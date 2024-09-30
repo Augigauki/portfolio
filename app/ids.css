@@ -197,4 +197,25 @@
 	#pp-firu-descriptor{
 		max-width: 50%;
 	}
+
+	#firu-desc {
+		max-width: 33%;
+		right: 6rem;
+	}
+}
+
+@media(max-width: 400px){
+	#pp-dstress-descriptor {
+		left: 6rem;
+	}
+	
+	#pp-dstress-type {
+		left: -6rem;
+		max-width: 5ch;
+	}
+
+	#newtopo-desc {
+		right: 5rem;
+		max-width: 20ch;
+	}
 }

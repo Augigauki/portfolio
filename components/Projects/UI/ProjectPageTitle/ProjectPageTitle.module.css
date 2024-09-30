@@ -1,13 +1,13 @@
 .h1, .h2{
     position: relative;
     z-index: 3;
-    font-weight: 200;
+    font-variation-settings: 'wght' 150;
     line-height: 1;
     display: flex;
     gap: 6px;
     user-select: none;
     flex-direction: column;
-    align-items: center;
+    align-items: center;   
 }
 
 .h1.bg, .h2.bg{
@@ -27,5 +27,11 @@
 @media(max-width: 868px){
     .h1, .h2{
         font-size: calc(82rem/16);
+    }
+}
+
+@media(max-width: 400px){
+    .h1, .h2{
+        font-size: calc(60rem/16);
     }
 }

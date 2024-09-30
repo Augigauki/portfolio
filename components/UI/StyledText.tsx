@@ -1,5 +1,4 @@
 import { FC } from 'react';
-import styles from './StyledText.module.css';
 import splitAndStyleText from '@/util/fontutils';
 
 interface StyledTextProps {

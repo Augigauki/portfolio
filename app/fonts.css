@@ -1,143 +1,163 @@
 @font-face {
-    font-family: 'Editorial Old';
-    src: url('../public/fonts/PPEditorialOld-Regular.otf') format('opentype');
-    font-weight: 400;
-    font-style: normal;
+	font-family: 'Editorial Old';
+	src: url('../public/fonts/PPEditorialOld-Variable.woff2') format('woff2'),
+		url('../public/fonts/PPEditorialOld-Variable.woff') format('woff'),
+		url('../public/fonts/PPEditorialOld-Variable.ttf') format('truetype');
+	font-weight: 100 900;
+	font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-    font-family: 'Editorial Old';
-    src: url('../public/fonts/PPEditorialOld-Italic.otf') format('opentype');
-    font-weight: 400;
-    font-style: italic;
+	font-family: 'Editorial Old';
+	src: url('../public/fonts/PPEditorialOld-ItalicVariable.woff2') format('woff2'),
+		url('../public/fonts/PPEditorialOld-ItalicVariable.woff') format('woff'),
+		url('../public/fonts/PPEditorialOld-ItalicVariable.ttf') format('truetype');
+	font-weight: 100 900;
+	font-style: italic;
+    font-display: swap;
+}
+
+/* @font-face {
+	font-family: 'Editorial Old';
+	src: url('../public/fonts/PPEditorialOld-Regular.otf') format('opentype');
+	font-weight: 400;
+	font-style: normal;
 }
 
 @font-face {
-    font-family: 'Editorial Old';
-    src: url('../public/fonts/PPEditorialOld-Ultralight.otf') format('opentype');
-    font-weight: 200;
-    font-style: normal;
+	font-family: 'Editorial Old';
+	src: url('../public/fonts/PPEditorialOld-Italic.otf') format('opentype');
+	font-weight: 400;
+	font-style: italic;
 }
 
 @font-face {
-    font-family: 'Editorial Old';
-    src: url('../public/fonts/PPEditorialOld-UltralightItalic.otf') format('opentype');
-    font-weight: 200;
-    font-style: italic;
+	font-family: 'Editorial Old';
+	src: url('../public/fonts/PPEditorialOld-Ultralight.otf') format('opentype');
+	font-weight: 200;
+	font-style: normal;
 }
 
 @font-face {
-    font-family: 'Neue Montreal';
-    src: url('../public/fonts/NeueMontreal-Regular.otf') format('opentype');
-    font-weight: 400;
-    font-style: normal;
+	font-family: 'Editorial Old';
+	src: url('../public/fonts/PPEditorialOld-UltralightItalic.otf') format('opentype');
+	font-weight: 200;
+	font-style: italic;
+} */
+
+@font-face {
+	font-family: 'Neue Montreal';
+	src: url('../public/fonts/NeueMontreal-Regular.otf') format('opentype');
+	font-weight: 400;
+	font-style: normal;
 }
 
 @font-face {
-    font-family: 'Neue Montreal';
-    src: url('../public/fonts/NeueMontreal-Regular.woff2') format('woff2');
-    font-weight: 400;
-    font-style: normal;
+	font-family: 'Neue Montreal';
+	src: url('../public/fonts/NeueMontreal-Regular.woff2') format('woff2');
+	font-weight: 400;
+	font-style: normal;
 }
 
 @font-face {
-    font-family: 'Neue Montreal';
-    src: url('../public/fonts/NeueMontreal-Italic.otf') format('opentype');
-    font-weight: 400;
-    font-style: italic;
+	font-family: 'Neue Montreal';
+	src: url('../public/fonts/NeueMontreal-Italic.otf') format('opentype');
+	font-weight: 400;
+	font-style: italic;
 }
 
 @font-face {
-    font-family: 'Neue Montreal';
-    src: url('../public/fonts/NeueMontreal-Italic.woff2') format('woff2');
-    font-weight: 400;
-    font-style: italic;
+	font-family: 'Neue Montreal';
+	src: url('../public/fonts/NeueMontreal-Italic.woff2') format('woff2');
+	font-weight: 400;
+	font-style: italic;
 }
 
 /*! DSTRESS */
 
 @font-face {
-    font-family: 'MeB';
-    src: url('../public/fonts/dstress/MeB.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
+	font-family: 'MeB';
+	src: url('../public/fonts/dstress/MeB.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
 }
 
 @font-face {
-    font-family: 'agate';
-    src: url('../public/fonts/dstress/metathesio/agate.otf') format('opentype');
-    font-weight: 400;
-    font-style: normal;
+	font-family: 'agate';
+	src: url('../public/fonts/dstress/metathesio/agate.otf') format('opentype');
+	font-weight: 400;
+	font-style: normal;
 }
 
 @font-face {
-    font-family: 'argnt';
-    src: url('../public/fonts/dstress/metathesio/argnt.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
+	font-family: 'argnt';
+	src: url('../public/fonts/dstress/metathesio/argnt.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
 }
 
 @font-face {
-    font-family: 'arial';
-    src: url('../public/fonts/dstress/metathesio/arial.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
+	font-family: 'arial';
+	src: url('../public/fonts/dstress/metathesio/arial.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
 }
 
 @font-face {
-    font-family: 'avaraitalic';
-    src: url('../public/fonts/dstress/metathesio/avaraitalic.otf') format('opentype');
-    font-weight: 400;
-    font-style: normal;
+	font-family: 'avaraitalic';
+	src: url('../public/fonts/dstress/metathesio/avaraitalic.otf') format('opentype');
+	font-weight: 400;
+	font-style: normal;
 }
 
 @font-face {
-    font-family: 'CirM';
-    src: url('../public/fonts/dstress/metathesio/CirM.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
+	font-family: 'CirM';
+	src: url('../public/fonts/dstress/metathesio/CirM.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
 }
 
 @font-face {
-    font-family: 'Kaeru';
-    src: url('../public/fonts/dstress/metathesio/Kaeru.otf') format('opentype');
-    font-weight: 400;
-    font-style: normal;
+	font-family: 'Kaeru';
+	src: url('../public/fonts/dstress/metathesio/Kaeru.otf') format('opentype');
+	font-weight: 400;
+	font-style: normal;
 }
 
 @font-face {
-    font-family: 'NeueM';
-    src: url('../public/fonts/dstress/metathesio/NeueM.otf') format('opentype');
-    font-weight: 400;
-    font-style: normal;
+	font-family: 'NeueM';
+	src: url('../public/fonts/dstress/metathesio/NeueM.otf') format('opentype');
+	font-weight: 400;
+	font-style: normal;
 }
 
 @font-face {
-    font-family: 'macab';
-    src: url('../public/fonts/dstress/macab.otf') format('opentype');
-    font-weight: 400;
-    font-style: normal;
+	font-family: 'macab';
+	src: url('../public/fonts/dstress/macab.otf') format('opentype');
+	font-weight: 400;
+	font-style: normal;
 }
 
 /*? FIRU */
 
 @font-face {
-    font-family: 'Space Mono';
-    src: url('../public/fonts/firu/SpaceMono-Bold.ttf') format('truetype');
-    font-weight: 600;
-    font-style: normal;
+	font-family: 'Space Mono';
+	src: url('../public/fonts/firu/SpaceMono-Bold.ttf') format('truetype');
+	font-weight: 600;
+	font-style: normal;
 }
 
 @font-face {
-    font-family: 'Sometype Mono Variable';
-    src: url('../public/fonts/firu/SometypeMono-VariableFont_wght.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
+	font-family: 'Sometype Mono Variable';
+	src: url('../public/fonts/firu/SometypeMono-VariableFont_wght.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
 }
 
 @font-face {
-    font-family: 'Komorebi Gothic P';
-    src: url('../public/fonts/firu/komorebi-gothic-P.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
+	font-family: 'Komorebi Gothic P';
+	src: url('../public/fonts/firu/komorebi-gothic-P.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
 }
