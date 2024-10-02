@@ -106,11 +106,17 @@ const NewTopo = ({}) => {
 					<ProjectFlexWrapper reverse={true}>
 						<div className={styles.flexvidwrapper}>
 							<video
-								src='/assets/images/projects/newtopo/page/newtopo-august.webm'
 								autoPlay
 								muted
 								loop
-							></video>
+								playsInline
+								poster='/assets/images/projects/newtopo/page/newtopo-august-poster.png'
+							>
+								<source
+									src='/assets/images/projects/newtopo/page/newtopo-august.mp4'
+									type='video/mp4'
+								/>
+							</video>
 						</div>
 						<ProjectBodyText color={clr}>
 							The museum is a collaborative project, showcasing New Topographics photography from friends

@@ -108,6 +108,7 @@ const Dstress = ({}) => {
 										autoPlay
 										muted
 										loop
+										playsInline
 										className={styles.video}
 										poster='/assets/images/projects/dstress/page/CLAUSTRO.jpg'
 									>
@@ -164,6 +165,7 @@ const Dstress = ({}) => {
 										autoPlay
 										muted
 										loop
+										playsInline
 										className={styles.video}
 										poster='/assets/images/projects/dstress/page/meta-capture.png'
 									>
@@ -226,6 +228,7 @@ const Dstress = ({}) => {
 										autoPlay
 										muted
 										loop
+										playsInline
 										className={styles.video}
 										poster='/assets/images/projects/dstress/page/thalasso-capture.png'
 									>
@@ -282,6 +285,7 @@ const Dstress = ({}) => {
 										autoPlay
 										muted
 										loop
+										playsInline
 										className={styles.video}
 										poster='/assets/images/projects/dstress/page/trypo-capture.png'
 									>

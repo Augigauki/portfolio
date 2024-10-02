@@ -51,7 +51,7 @@ const Projects = () => {
 		<motion.div
 			animate={{ backgroundColor: bgColor }}
 			initial={{ backgroundColor: bgColor }}
-			transition={{duration: 0.5}}
+			transition={{ duration: 0.5 }}
 		>
 			<ContentWrapper>
 				<div className={styles.outerwrapper}>
@@ -62,89 +62,34 @@ const Projects = () => {
 						transition={{ duration: 0.5 }}
 					/>
 					<div
-						ref={firuRef}
-						className={styles.projectcontainer}
-					>
-						<ProjectWrapper color={'rgb(5, 66, 155)'}>
-							<div id={styles.firuimg1}>
-								<Image
-									src={'/assets/images/projects/firu/spread_1.jpg'}
-									alt='FIRU Magazine Spread'
-									width={600 * 1.25}
-									height={500 * 1.25}
-									className={styles.image}
-									id={styles.firuspread}
-									style={{ maxWidth: 'unset' }}
-								/>
-								<Meta
-									color={firuColor}
-									id={'pp-firu-descriptor'}
-									right={'0'}
-									bottom={'0'}
-								>
-									Firu is a magazine about japanophilia
-								</Meta>
-							</div>
-							<Meta
-								color={firuColor}
-								id={'pp-firu-category'}
-							>
-								Editorial 2018
-							</Meta>
-							<Link
-								href={'/projects/firu'}
-								className={styles.projectlink}
-							>
-								<ProjectPageTitle
-									text={'Firu'}
-									color={firuColor}
-									level={'h2'}
-								/>
-								<TitleBg />
-							</Link>
-
-							<Meta
-								color={firuColor}
-								id='pp-firu-client'
-							>
-								Schoolwork
-							</Meta>
-							<div id={styles.firuimg2}>
-								<Image
-									src={'/assets/images/projects/firu/detail.jpg'}
-									alt='FIRU Detail'
-									width={324 * 1.5}
-									height={220 * 1.5}
-									className={styles.image}
-									id={styles.firudetail}
-									style={{ maxWidth: 'unset' }}
-								/>
-							</div>
-						</ProjectWrapper>
-					</div>
-					<div
 						ref={newTopoRef}
 						className={styles.projectcontainer}
 					>
 						<ProjectWrapper color={newTopoColor}>
-							<div id={styles.newtopoimg1}>
+							<Link
+								href='/projects/new-topographics'
+								className={styles.imglink}
+								id={styles.newtopoimg1}
+							>
 								<Image
 									src={'/assets/images/projects/newtopo/newtopo1.jpg'}
 									alt='Car garage canada'
-									width={325 * 1.5}
-									height={216 * 1.5}
+									width={325 * 3}
+									height={216 * 3}
 									className={styles.image}
 									id={styles.canadacar}
 								/>
-								<Meta
-									color={newTopoColor}
-									id='pp-newtopo-descriptor'
-									left={'0'}
-									top={'40rem'}
-								>
-									New Topographics is an online photography museum
-								</Meta>
-							</div>
+								<div className={styles.metalink}>
+									<Meta
+										color={newTopoColor}
+										id='pp-newtopo-descriptor'
+										left={'0'}
+										top={'40rem'}
+									>
+										New Topographics is an online photography museum
+									</Meta>
+								</div>
+							</Link>
 
 							<Link
 								href={'/projects/new-topographics'}
@@ -157,7 +102,11 @@ const Projects = () => {
 								/>
 								<TitleBg color={bgColor} />
 							</Link>
-							<div id={styles.newtopoimg2}>
+							<Link
+								href='/projects/new-topographics'
+								className={styles.imglink}
+								id={styles.newtopoimg2}
+							>
 								<Image
 									src={'/assets/images/projects/newtopo/newtopo2.jpg'}
 									alt='Intility'
@@ -166,22 +115,107 @@ const Projects = () => {
 									className={styles.image}
 									id={styles.intility}
 								/>
-								<Meta
-									color={newTopoColor}
-									id='pp-newtopo-category'
-								>
-									Webdesign & development
-								</Meta>
-							</div>
+								<div className={styles.metalink}>
+									<Meta
+										color={newTopoColor}
+										id='pp-newtopo-category'
+									>
+										Webdesign & development
+									</Meta>
+								</div>
+							</Link>
 						</ProjectWrapper>
 					</div>
+					<div
+						ref={firuRef}
+						className={styles.projectcontainer}
+					>
+						<ProjectWrapper color={'rgb(5, 66, 155)'}>
+							<Link
+								href='/projects/firu'
+								id={styles.firuimg1}
+								className={styles.imglink}
+							>
+								<Image
+									src={'/assets/images/projects/firu/spread_1.jpg'}
+									alt='FIRU Magazine Spread'
+									width={600 * 1.25}
+									height={500 * 1.25}
+									className={styles.image}
+									id={styles.firuspread}
+									style={{ maxWidth: 'unset' }}
+								/>
+								<div className={styles.metalink}>
+									<Meta
+										color={firuColor}
+										id={'pp-firu-descriptor'}
+										right={'0'}
+										bottom={'0'}
+									>
+										Firu is a magazine about japanophilia
+									</Meta>
+								</div>
+							</Link>
+							<Link
+								href='/projects/firu'
+								id={'pp-firu-category'}
+								className={styles.metalink}
+							>
+								<Meta
+									color={firuColor}
+									/* id={'pp-firu-category'} */
+								>
+									Editorial 2018
+								</Meta>
+							</Link>
+							<Link
+								href={'/projects/firu'}
+								className={styles.projectlink}
+							>
+								<ProjectPageTitle
+									text={'Firu'}
+									color={firuColor}
+									level={'h2'}
+								/>
+								<TitleBg />
+							</Link>
+
+							<Link
+								href='/projects/firu'
+								id='pp-firu-client'
+								className={styles.metalink}
+							>
+								<Meta color={firuColor}>Schoolwork</Meta>
+							</Link>
+							<Link
+								href='/projects/firu'
+								className={styles.imglink}
+								id={styles.firuimg2}
+							>
+								<Image
+									src={'/assets/images/projects/firu/detail.jpg'}
+									alt='FIRU Detail'
+									width={324 * 1.5}
+									height={220 * 1.5}
+									className={styles.image}
+									id={styles.firudetail}
+									style={{ maxWidth: 'unset' }}
+								/>
+							</Link>
+						</ProjectWrapper>
+					</div>
+
 					<div
 						ref={dstressRef}
 						className={styles.projectcontainer}
 						id={styles.dstress}
 					>
 						<ProjectWrapper color={white}>
-							<div id={styles.dstressimg1}>
+							<Link
+								href='/projects/dstress'
+								className={styles.imglink}
+								id={styles.dstressimg1}
+							>
 								<Image
 									src={'/assets/images/projects/dstress/CLAUSTRO.jpg'}
 									alt='Thumbnail for interactive Claustrophobia artwork'
@@ -190,15 +224,14 @@ const Projects = () => {
 									className={styles.image}
 									id={styles.claustro}
 								/>
-							</div>
-							<Meta
-								color={white}
-								id={'pp-dstress-descriptor'}
-								left={'0'}
-								top={'33vh'}
+							</Link>
+							<Link
+								href='/projects/dstress'
+								className={styles.metalink}
+								id='pp-dstress-descriptor'
 							>
-								Interactive Album Artworks About Phobias
-							</Meta>
+								<Meta color={white}>Interactive Album Artworks About Phobias</Meta>
+							</Link>
 							<Link
 								href={'/projects/dstress'}
 								className={styles.projectlink}
@@ -210,15 +243,22 @@ const Projects = () => {
 								/>
 								<TitleBg color={bgColor} />
 							</Link>
-							<Meta
-								color={white}
-								id={'pp-dstress-type'}
-								left={'0%'}
-								top={'-55vh'}
+							<Link
+								href='/projects/dstress'
+								id='pp-dstress-type'
+								className={styles.metalink}
 							>
-								Code exploration
-							</Meta>
-							<div id={styles.dstressimg2}>
+								<Meta
+									color={white}
+								>
+									Code exploration
+								</Meta>
+							</Link>
+							<Link
+								href='/projects/dstress'
+								id={styles.dstressimg2}
+								className={styles.imglink}
+							>
 								<Image
 									src={'/assets/images/projects/dstress/METATHESIO.gif'}
 									alt='Intility'
@@ -228,7 +268,7 @@ const Projects = () => {
 									id={styles.metathesio}
 									unoptimized
 								/>
-							</div>
+							</Link>
 						</ProjectWrapper>
 					</div>
 				</div>

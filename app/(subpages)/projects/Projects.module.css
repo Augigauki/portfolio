@@ -39,6 +39,30 @@
     font-variation-settings: 'wght' 250;
 }
 
+.imglink{
+	text-decoration: none;
+	color: inherit;
+}
+
+.imglink img{
+	transition: transform 0.3s ease-in-out;
+
+}
+
+.imglink img:hover{
+	transform: scale(1.025)
+}
+
+.metalink{
+	text-decoration: none;
+	position: relative;
+}
+
+.metalink p:hover{
+	text-decoration: underline;
+	text-underline-offset: 4px;
+}
+
 #dstress {
 	height: 100dvh;
 	display: flex;
@@ -48,14 +72,14 @@
 
 #firuimg1 {
 	position: absolute;
-	top: -80%;
+	top: -50%;
 	left: 0%;
 	z-index: 2;
 }
 
 #firuimg2 {
 	position: absolute;
-	bottom: -15%;
+	bottom: -55%;
 	right: 0;
 	z-index: 2;
 }
@@ -79,18 +103,18 @@
 
 #newtopoimg2 {
 	position: absolute;
-	bottom: -30vh;
+	bottom: -25vh;
 	right: clamp(32px, 5vw, 64px);
 	z-index: 2;
 }
 
 #canadacar {
-	width: clamp(300px, 23vw, 500px);
+	width: clamp(300px, 30vw, 700px);
 	height: auto;
 }
 
 #intility {
-	width: clamp(300px, 28vw, 600px);
+	width: clamp(300px, 32vw, 800px);
 	height: auto;
 }
 
@@ -225,6 +249,12 @@
 	#intility {
 		width: 75vw;
 		height: auto;
+	}
+}
+
+@media(max-width: 400px){
+	.metalink{
+		font-size: calc(12rem/16);
 	}
 }
 
