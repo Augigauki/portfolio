@@ -19,11 +19,13 @@ export default function RootLayout({
 	return (
 		<html lang='en'>
 			<head>
-				<Script
-					src='https://umami-analytics-qbpe.vercel.app/script.js'
-					defer
-					data-website-id='dfe2eb24-c495-48e6-a121-2cca1d2fcdbc'
-				/>
+				{process.env.ENV !== 'dev' && (
+					<Script
+						src='https://umami-analytics-qbpe.vercel.app/script.js'
+						defer
+						data-website-id='dfe2eb24-c495-48e6-a121-2cca1d2fcdbc'
+					/>
+				)}
 			</head>
 			<body>
 				<ColorProvider>{children}</ColorProvider>
